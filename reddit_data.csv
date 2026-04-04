@@ -1,0 +1,561 @@
+id,subreddit,title,score,num_comments,created_utc,source
+1s7fepn,ClaudeAI,r/ClaudeAI List of Ongoing Megathreads,30,0,1774840724.0,hot
+1sbtmru,ClaudeAI,Using third-party harnesses with your Claude subscriptions,87,76,1775259774.0,hot
+1sble09,ClaudeAI,Taught Claude to talk like a caveman to use 75% less tokens.,6910,329,1775240367.0,hot
+1sbshwj,ClaudeAI,Anthropic just gave us 1 month worth of subscription value as usage,876,229,1775256855.0,hot
+1sbcukr,ClaudeAI,💀,2681,75,1775220965.0,hot
+1sbsfst,ClaudeAI,Claude is killing Openclaw oauth use starting tomorrow,333,190,1775256703.0,hot
+1sbqalg,ClaudeAI,I reverse-engineered why Claude Code burns through your usage so fast. 7 bugs that stack on top of each other — and the worst one activates when Extra Usage kicks in,198,39,1775251430.0,hot
+1sc007v,ClaudeAI,Views on this 50X token reduction trick?,51,9,1775278043.0,hot
+1sblhtu,ClaudeAI,"Claude has ""emotion"" and this can drive Claude’s behavior :smile: We should be gentle with the model and stay calm to avoid reward hacking (try to cheat to finish the task)",339,73,1775240600.0,hot
+1sbsul8,ClaudeAI,Thanks Anthropic 200$ credit extra,135,108,1775257741.0,hot
+1sb4w67,ClaudeAI,things that claude say (part 2),3384,82,1775194359.0,hot
+1sbsz4t,ClaudeAI,Just got this email,106,91,1775258063.0,hot
+1sc48cr,ClaudeAI,Claude feels compelled to suggest I leave the conversation?,18,39,1775292779.0,hot
+1sc0zsc,ClaudeAI,"A headless web browser for AI agents with JS - (single binary, no dependencies, no fees, local)",25,14,1775281301.0,hot
+1sboykj,ClaudeAI,"TIL Anthropic's rate limit pool for OAuth tokens is gated by... the system prompt saying ""You are Claude Code""",109,30,1775248354.0,hot
+1sbiu1j,ClaudeAI,How are people having claude work like an agent?,158,67,1775234826.0,hot
+1sc5fj9,ClaudeAI,Boris Cherny (creator of CC) complete thread - anthropic bans subscription on 3rd party usage,6,1,1775297234.0,hot
+1sba62u,ClaudeAI,Reminder that screenshot can very easily be edited,358,26,1775213166.0,hot
+1sbssku,ClaudeAI,"Sweet - $20 credit from Claude! ...oh, that tracks.",34,15,1775257596.0,hot
+1sbnuuf,ClaudeAI,"I keep going down random rabbit holes and wanted somewhere to actually explore them properly, so I built OpenAlmanac",53,9,1775245873.0,hot
+1sc0x03,ClaudeAI,[ Removed by Reddit ],7,10,1775281031.0,hot
+1sbwsy6,ClaudeAI,Claude glitched out but I'm impressed it was aware of itself the whole way,12,5,1775268452.0,hot
+1sbhgjx,ClaudeAI,I built a personal prompt library where you can save your prompts for Claude locally in your browser,77,30,1775231764.0,hot
+1sba9hq,ClaudeAI,Is this new to everyone or just me ?,183,88,1775213460.0,hot
+1sbbtv6,ClaudeAI,Can my organization's admin see my chats and uploaded files on Claude Team plan?,122,59,1775218226.0,hot
+1sc3s6u,ClaudeAI,Personality disorder: how do you fix it,3,1,1775291094.0,hot
+1sbzjgk,ClaudeAI,How to claim one time extra usage credit,5,10,1775276545.0,hot
+1sbozpk,ClaudeAI,How do you manage your brain compute power,21,43,1775248426.0,hot
+1sc0hnh,ClaudeAI,"How many rounds of ""what else did you miss? Is everything wired together"" cycles do you go through after Claude says ""I finished the job""?",4,16,1775279583.0,hot
+1sc20m8,ClaudeAI,Claude all 27 Hooks lifecycle explained,3,0,1775284736.0,hot
+1sbtg5k,ClaudeAI,"An Opus, a GPT and a Grok walk into a bar…",11,15,1775259291.0,hot
+1sbvuhl,ClaudeAI,[Project] I read a 1999 book and built an entire AI framework with Claude Code — 0 lines written by a human,8,8,1775265753.0,hot
+1sbxqu3,ClaudeAI,Built a HIPAA compliant app w Claude!,5,1,1775271162.0,hot
+1sbz1c8,ClaudeAI,Maestro v1.5.0 — multi-agent orchestration now runs on both Claude Code and Gemini CLI,4,2,1775275016.0,hot
+1sc2ybd,ClaudeAI,Using Claude code to port Linux to FPGA soft cores,2,1,1775288075.0,hot
+1sc2kb7,ClaudeAI,Claude Code Game Development Log - Week 2 LUMINAL,2,4,1775286698.0,hot
+1sc65st,ClaudeAI,"I gave Claude Code a 285-line operating manual and 5 lifecycle hooks inside my Obsidian vault. After a month, it basically runs my work documentation for me.",1,1,1775299875.0,hot
+1sc640y,ClaudeAI,"An AR Game based on connecting molecules together! Made this over the weekend with Claude, adding some assets from my end. Currently running on my local device.",1,1,1775299704.0,hot
+1sc5wlu,ClaudeAI,Can you update a published artifact and keep the same URL + persistent storage data?,1,1,1775298954.0,hot
+1sc5w3x,ClaudeAI,Anyone has compared HIGH vs Medium Efforts? From CLAUDE,1,2,1775298905.0,hot
+1sbsnw1,ClaudeAI,"Free Extra Usage, on US lol",8,26,1775257269.0,hot
+1sc5er6,ClaudeAI,"Built an agent framework that runs Claude Code as the agentic loop: fractal architecture, inter-agent inboxes, schedulers, voice (pip install autonet-computer)",1,1,1775297156.0,hot
+1sbx5c2,ClaudeAI,I built an MCP bridge so Claude Code and Claude.ai can talk to each other.,5,10,1775269433.0,hot
+1sbc6h9,ClaudeAI,Card Computer,54,8,1775219186.0,hot
+1sc556w,ClaudeAI,Fix the voice mode plz,1,3,1775296204.0,hot
+1sbr1h6,ClaudeAI,Claude Code will validate your bad ideas -- and that's a real problem,8,29,1775253208.0,hot
+1sc510m,ClaudeAI,"I built Zoku, it silently watches your Claude Code sessions and discovers your repeated workflows",1,2,1775295758.0,hot
+1sc4wvi,ClaudeAI,I built a `/focus` command for Claude Code — instant context loading from persistent memory,1,2,1775295316.0,hot
+1sbwpbq,ClaudeAI,"Claude Code Channels + Telegram — anyone solved the ""must open CLI manually after reboot"" problem?",4,7,1775268158.0,hot
+1sc4vig,ClaudeAI,Local RAG,1,5,1775295171.0,hot
+1sc4uco,ClaudeAI,Claude Code sometimes uses Brave API for web search; not sure when. Does someone know?,1,1,1775295046.0,hot
+1sboqg5,ClaudeAI,Is it true that most of claude code is prompt plumbing behind the scenes?,10,29,1775247855.0,hot
+1sc4ggd,ClaudeAI,I built a Claude Code plugin with 10 specialized agents for Ethereum development — ~55% token savings by design,0,1,1775293605.0,hot
+1sb9yq2,ClaudeAI,Trying to understand Claude’s usage limits — is Max worth it for coding and UI work?,63,66,1775212484.0,hot
+1sc42wa,ClaudeAI,Claude Skill for Summarizing Electrical Engineering Technical Documents,1,1,1775292194.0,hot
+1sc03t5,ClaudeAI,Came across this Claude Code workflow visual,2,1,1775278358.0,hot
+1sc3xwo,ClaudeAI,I fixed manually copy pasting claude code responses,1,1,1775291674.0,hot
+1sbt466,ClaudeAI,"Advice for building better dashboards, reports, and webtools with Claude",5,8,1775258428.0,hot
+1sbnxmz,ClaudeAI,"Anthropic found Claude has 171 internal ""emotion vectors"" that change its behavior. I built a toolkit around the research.",8,1,1775246052.0,hot
+1sc2zfm,ClaudeAI,the right way to build memory. claude is doing it. so are we.,1,10,1775288179.0,hot
+1sbtq7k,ClaudeAI,How to use Opus 200k token limit on Claude Code?,4,6,1775260021.0,hot
+1sb5616,ClaudeAI,"&lt; 5 teams, no Claude privacy guarantee: Product Gap for Solo Practitioners/Solopreneurs",111,97,1775195299.0,hot
+1sbl8kt,ClaudeAI,When you forget to turn on --dangerously-skip-permissions,11,5,1775240029.0,hot
+1sbyf81,ClaudeAI,I built a multi-agent audience simulator using Claude Code — 500 AI personas react to your content before you post it,1,5,1775273128.0,hot
+1sbg584,ClaudeAI,Wanted to share some 'calmness' considerations after seeing the Anthropic's emotion vector research,19,6,1775228825.0,hot
+1sc27be,ClaudeAI,Auth 400 Error Fix,1,1,1775285400.0,hot
+1sc24s3,ClaudeAI,Todoist connector no longer available in Claude. Here's how to get around it.,1,3,1775285140.0,hot
+1sc1taz,ClaudeAI,How do you handle web tool calls for Claude agents without burning the context window?,1,2,1775284030.0,hot
+1sc1p8g,ClaudeAI,"Anyone else finding ClaudeAI, interchat memory weak?",1,2,1775283651.0,hot
+1sbuj74,ClaudeAI,I don’t know if this is the right place to post this,3,12,1775262117.0,hot
+1sc1ht5,ClaudeAI,Claude code project rename,1,2,1775282940.0,hot
+1sbx2s1,ClaudeAI,Built an MCP server where Claude can create its own tools at runtime — here's the architecture,2,1,1775269233.0,hot
+1salhpg,ClaudeAI,I gave several AIs money to invest in the stock market,1093,146,1775145778.0,hot
+1sc19fp,ClaudeAI,Cambiar nombre de proyecto en claude code,0,1,1775282194.0,hot
+1sc1620,ClaudeAI,Anthropic updated terms and conditions on using subscription with headless/SDK,1,2,1775281881.0,hot
+1sc149v,ClaudeAI,Help with error code,1,2,1775281713.0,hot
+1sbwlng,ClaudeAI,A status bar for Claude Code showing context window + rate limits in real time,2,2,1775267876.0,hot
+1sbjypr,ClaudeAI,"For Claude Code, what would ""portable"" actually mean?",19,3,1775237262.0,hot
+1sc0n2r,ClaudeAI,Has anyone noticed Claude feeling more managed since January? There may be a documented reason.,0,2,1775280100.0,hot
+1sc4eai,ClaudeAI,Claude doesn't remember chain of thought from past prompts?,0,5,1775293379.0,hot
+1sc0hm2,ClaudeAI,I built a tool to export long Claude conversations to PDF without losing the formatting. Free to try!,0,1,1775279579.0,hot
+1sc0dy1,ClaudeAI,why is there nothing about this in the internet???,0,2,1775279245.0,hot
+1saoa8i,ClaudeAI,Latest Research By Anthrophic Highlights that Claude Might Have Functional Emotions,658,291,1775151787.0,hot
+1sbzok6,ClaudeAI,"Swarm Orchestrator v4.1.0, verification layer for AI coding agents (Copilot CLI, Claude Code, Codex)",1,1,1775276996.0,hot
+1sbuq6x,ClaudeAI,"Does anyone have ""update CLAUDE.md with relevant findings"" in their CLAUDE.md?",2,5,1775262658.0,hot
+1sbn2vq,ClaudeAI,Claude Status Update : Elevated errors on requests to Claude Sonnet 4.6 on 2026-04-03T19:21:08.000Z,6,0,1775244116.0,hot
+1sboliv,ClaudeAI,Your AI keeps a diary about you. It’s doing it badly.,3,3,1775247561.0,hot
+1sbyw9d,ClaudeAI,Adaptive Inference Routing,1,2,1775274584.0,hot
+1sbfh1w,ClaudeAI,Claude Code channels with the Telegram plugin impersonation,10,6,1775227297.0,hot
+1sbyqcg,ClaudeAI,MCP server to remove hallucination and make AI agents better at debugging and project understanding,0,1,1775274083.0,hot
+1sbypps,ClaudeAI,Separate machine for Claude Co-Work?,0,4,1775274031.0,hot
+1sbf5mo,ClaudeAI,Hitting limits on 5x &amp; Claude said False Positive on a North Korean RAT alerts in my EDS.,10,5,1775226551.0,hot
+1sbyaok,ClaudeAI,You gotta admit that this is cool.,0,4,1775272751.0,hot
+1sbtb34,ClaudeAI,"I gave Claude Code a knowledge graph, spaced repetition, and semantic search over my Obsidian vault — it actually remembers things now",2,1,1775258930.0,hot
+1sam5pw,ClaudeAI,Claude - tried to kill me,572,148,1775147220.0,hot
+1sbsoq1,ClaudeAI,I created my first MPC using Claude!,2,1,1775257328.0,hot
+1sakut1,ClaudeAI,Switched from MCPs to CLIs for Claude Code and honestly never going back,615,74,1775144365.0,hot
+1sb6kka,ClaudeAI,Sonnet rate limits are forcing me to rethink my whole workflow,37,36,1775200228.0,hot
+1sbs6yo,ClaudeAI,Extended thinking?,2,1,1775256058.0,hot
+1sb053k,ClaudeAI,is AI making us better thinkers or just faster workers,92,97,1775180214.0,hot
+1sbbvbi,ClaudeAI,From “why can’t I do this?” to actually building with AI,7,11,1775218332.0,top
+1sbaukg,ClaudeAI,I measured what smart Claude routing actually saves - 73% cost reduction with one config change,7,7,1775215328.0,top
+1sbfw4e,ClaudeAI,"Extremely long ""idle"" times when using Claude Code",6,13,1775228273.0,top
+1sbc8ig,ClaudeAI,Real talk: has anyone actually made Claude Code work well with non-Claude models?,6,14,1775219349.0,top
+1sbb2nd,ClaudeAI,Orchestration platform for AI agents?,6,12,1775216028.0,top
+1sbgwcp,ClaudeAI,How to improve web search and research?,5,11,1775230509.0,top
+1sblam1,ClaudeAI,Claude Status Update : Elevated errors on requests to Claude Sonnet 4.6 on 2026-04-03T18:12:45.000Z,3,0,1775240156.0,top
+1sbjtp8,ClaudeAI,Planning Mode is now Editing? Anyone else?,4,1,1775236960.0,top
+1sbc834,ClaudeAI,Claude for teachers,4,7,1775219315.0,top
+1sbn434,ClaudeAI,TIL: How to move or rename a project folder without losing your Claude Code session history (Mac),3,1,1775244187.0,top
+1sbjv14,ClaudeAI,docvault — vendor library docs so your AI stops hallucinating APIs,3,3,1775237042.0,top
+1sbh1t4,ClaudeAI,"Which option is better: keeping the code on Clause and sharing the artifact, or downloading it and hosting it on Static.app?",3,6,1775230846.0,top
+1sbe4bd,ClaudeAI,Cowork data loss,3,2,1775224114.0,top
+1sbd7ea,ClaudeAI,Leadership app with 90+ lessons from 20+ books. Runs inside Claude.,3,4,1775221849.0,top
+1sbrgp6,ClaudeAI,Practicality Question,2,1,1775254243.0,top
+1sbm7g2,ClaudeAI,To what extent do you or your organisation allow Claude to access client or organisational data?,2,13,1775242186.0,top
+1sbkhbd,ClaudeAI,Claude controls my model railroad,2,1,1775238393.0,top
+1sbk70a,ClaudeAI,I'm struggling getting an OpenClaw agentic experience natively in Claude tooling.  Need guidance on how to construct similar experience without deploying an OC instance.,2,4,1775237765.0,top
+1sbjk41,ClaudeAI,"Claude Code agents negotiating API contracts across machines — no scripted workflows, just messaging tools",2,1,1775236382.0,top
+1sbj5im,ClaudeAI,"Claude Raises Subscription Plans by 10%, Japan",2,2,1775235515.0,top
+1sbgxcs,ClaudeAI,I built an AI news aggregator using Claude as my coding partner – aibrief.fyi,1,2,1775230571.0,top
+1sbbos7,ClaudeAI,Emotion Concepts and their Function in a Large Language Model,2,1,1775217815.0,top
+1sbwg0q,ClaudeAI,Chats getting deleted,1,2,1775267434.0,top
+1sbwd16,ClaudeAI,Help change tone,1,1,1775267204.0,top
+1sbvj94,ClaudeAI,"Skills externas en archivos .md de Claude: por qué es útil tenerlas, cómo crearlas y cómo usarlas",1,1,1775264880.0,top
+1sbt2gj,ClaudeAI,Why Claude web is giving better results than Claude Code,1,2,1775258304.0,top
+1sbsp78,ClaudeAI,"Built a skill extraction API in public, then wrapped it in MCP, the developer experience difference is massive",1,1,1775257361.0,top
+1sbsk33,ClaudeAI,"Claude Code used ~$20 for 2 basic reviews, while a similar API run cost ~$5.30. Is this expected?",1,5,1775257007.0,top
+1sc3qre,ClaudeAI,I didn't realise I'd spent $249 in a single week on Claude Code - so I built a tool for it,0,1,1775290949.0,new
+1sbzffr,ClaudeAI,How do I stop making Claude think that I need therapy or counselling and focus on my weight loss journey,0,13,1775276200.0,new
+1sbz7vr,ClaudeAI,Guys....,0,1,1775275555.0,new
+1sbz4zz,ClaudeAI,PSA: MCP tool calls are eating your context window alive. Here's the math.,0,2,1775275313.0,new
+1sbyeh8,ClaudeAI,"I built a persistent memory framework for Claude Code after 1,500+ sessions. It’s open source now.",0,8,1775273067.0,new
+1sbwmwt,ClaudeAI,So frustrated with storage / artifacts I'm thinking of bailing on Claude. Am I missing something?,0,5,1775267978.0,new
+1sbuw6q,ClaudeAI,I gave Claude Code persistent memory that improves itself between sessions,0,4,1775263113.0,new
+1sbuokr,ClaudeAI,I'm not a developer — I used Claude to build a browser automation tool and open-sourced it,0,10,1775262534.0,new
+1sbud2s,ClaudeAI,I built a Claude Code plugin that makes agents work more like an engineering team,0,4,1775261659.0,new
+1sbucse,ClaudeAI,Autonomous Setup,0,3,1775261640.0,new
+1sbuciy,ClaudeAI,Claude and Apollo outreach?,0,2,1775261620.0,new
+1sbu4yd,ClaudeAI,Claiming the extra usage twice,0,14,1775261062.0,new
+1sbsiae,ClaudeAI,safety_instructions_from_anthropic,1,3,1775256881.0,new
+1sbsdwd,ClaudeAI,Is there a way to prevent the conversation from being truncated?,1,2,1775256562.0,new
+1sbrcqr,ClaudeAI,What AI DevOps workflows have you implemented?,0,1,1775253972.0,new
+1sbrc0p,ClaudeAI,PACT v0.7.1 — What's changed since Compound Intelligence (and thank you!),1,1,1775253920.0,new
+1sbrbjv,ClaudeAI,Created this Ai Ghazal afro trap remix using Claude agent.,0,8,1775253886.0,new
+1sbr55b,ClaudeAI,I built a tool that tracks every change to your CLAUDE.md (and other instruction files),1,1,1775253458.0,new
+1sbqtww,ClaudeAI,So I didn't have Weekly Limits... until I upgraded from Pro to Max?,0,4,1775252710.0,new
+1sbqgzr,ClaudeAI,How to set up synergy between CC and Claude.ai,1,3,1775251852.0,new
+1sbpupi,ClaudeAI,I gave Claude Code a paranoid security engineer brain. It immediately found crimes in my vibe-coded app.,0,5,1775250408.0,new
+1sbpti2,ClaudeAI,Did anyone notice Superpowers going away?,1,1,1775250329.0,new
+1sbp7qs,ClaudeAI,Helpful use case: Have Claude build one off artifacts to format your docs.,1,1,1775248939.0,new
+1sboz6t,ClaudeAI,Apify not getting installed,0,3,1775248393.0,new
+1o6jins,ChatGPT,Updates for ChatGPT,3558,1410,1760457669.0,hot
+1nvea4p,ChatGPT,GPT-4o/GPT-5 complaints megathread,602,4203,1759338997.0,hot
+1sbz1kd,ChatGPT,This prompt is generating some highly disturbing content.,923,1013,1775275035.0,hot
+1sbux6t,ChatGPT,This new technique saves 60% of my token expenses,456,29,1775263193.0,hot
+1sbuyeg,ChatGPT,I mass deleted 3 months of AI generated code last week. Here is what I learned.,455,95,1775263294.0,hot
+1sbkr23,ChatGPT,I used ChatGPT to help me go from 229lbs to 176lbs,1096,154,1775238987.0,hot
+1sbh1ju,ChatGPT,Asked it to improve the quality of a photo from my bird feeder camera. Not a bad job,1286,208,1775230829.0,hot
+1sc4j6o,ChatGPT,Used the prompt people were posting and good lord what is this😭,37,88,1775293892.0,hot
+1sbolrk,ChatGPT,"Create a pic of the most average female at the most average location. She should be average weight, average age, average intelligence, average taste, and average socio-economic level. (Gemini)",398,184,1775247574.0,hot
+1sbzzd1,ChatGPT,🥲🥲,56,7,1775277966.0,hot
+1sb9dmj,ChatGPT,"Okay perfect, just making sure.",900,57,1775210484.0,hot
+1sb3cq1,ChatGPT,"High school dance circa 2012, taken with iPhone 4",2506,250,1775189442.0,hot
+1sc008n,ChatGPT,IT Guy Goes Down In History After Using ChatGPT And His Dog’s DNA To Create A Cancer Cure For Her,26,4,1775278045.0,hot
+1sb6dzf,ChatGPT,"Yup it be like that sometimes.
+
+Sorry, not sorry. 😉",1103,37,1775199578.0,hot
+1sboth5,ChatGPT,This sub should just be named i hate chatgtp😂,90,64,1775248043.0,hot
+1sbtric,ChatGPT,Using AI daily is making me noticeably worse at doing things without it,45,32,1775260116.0,hot
+1sbp8d7,ChatGPT,My ChatGPT is haunted,85,48,1775248978.0,hot
+1sbwg6f,ChatGPT,Most average person at walmart.,20,25,1775267446.0,hot
+1saxouh,ChatGPT,Asked ChatGPT for an Image of the Most Average Human on the Planet,2689,1020,1775173579.0,hot
+1sc5dd6,ChatGPT,I used ChatGPT to help me go from 176lbs to 229lbs,4,2,1775297020.0,hot
+1sbsztw,ChatGPT,Anyone else’s Chat telling you you’re not stupid?,29,18,1775258112.0,hot
+1sb9jtu,ChatGPT,Revenge,306,93,1775211071.0,hot
+1sbsqx2,ChatGPT,"I'm positive there was some recent update that makes the AI ""gently push back"" on everything",26,19,1775257480.0,hot
+1sbzzkg,ChatGPT,ChatGPT has become the most important app on my tablet and PC.,11,42,1775277984.0,hot
+1sc1tvg,ChatGPT,The most surprising rickroll yet,6,2,1775284084.0,hot
+1sb2vy7,ChatGPT,This kind of scared me can someone tell me why this happened,780,308,1775188056.0,hot
+1sb8wa0,ChatGPT,“You're absolutely right. I meant left.” - ChatGPT's new CarPlay feature,235,17,1775208768.0,hot
+1sb2rdt,ChatGPT,I found Tiger Woods DUI picture from the back of a patrol car on r/AccidentalRenaissance. It reminded me of a catholic candle. lol,690,34,1775187673.0,hot
+1sc4hwb,ChatGPT,asked chagpt to turn every muppet into a human,4,3,1775293761.0,hot
+1sc2swt,ChatGPT,How to fix this chopped-up style of expression?,4,3,1775287536.0,hot
+1sc60nm,ChatGPT,Kayako Saeki from The Grudge after scaring all the residents out of the house,2,1,1775299361.0,hot
+1sbtvrq,ChatGPT,The Productivity Lie: Why AI Tools Make You Feel Fast But Make You Slow,12,20,1775260430.0,hot
+1sc10ag,ChatGPT,ChatGPT priced a job for me,5,3,1775281346.0,hot
+1sc4h0r,ChatGPT,Chat GPT argues with and gets roasted by Gemini before being proved wrong,2,5,1775293671.0,hot
+1sbsxn0,ChatGPT,Does anyone else hate follow up suggestions?,11,17,1775257961.0,hot
+1sbusox,ChatGPT,"I asked different Ai's ""where can I find my bike's ID"" (April fools)",9,4,1775262846.0,hot
+1sb7jop,ChatGPT,Filter is beyond a joke now,150,44,1775203826.0,hot
+1sbb1lp,ChatGPT,"Tristan Harris - there's a 2000:1 gap between the amount of money making AI more powerful and the amount of money making AI controllable, aligned, and safe",80,27,1775215947.0,hot
+1sbym47,ChatGPT,why does chatgpt dont follow custom instructions?,6,7,1775273720.0,hot
+1sbr2ns,ChatGPT,Made AI Generate Its Own Criticism,10,6,1775253284.0,hot
+1sc655u,ChatGPT,Anyone want to try to help me figure this out?,1,1,1775299812.0,hot
+1sc63zk,ChatGPT,What the f*ck!,0,1,1775299701.0,hot
+1sbwov6,ChatGPT,Most Prompts Are Trash,5,14,1775268121.0,hot
+1sc61ax,ChatGPT,I used the prompt I’ve been seeing here a lot lately and I’m SICK,1,2,1775299426.0,hot
+1sbh3rh,ChatGPT,Create a image of the alphabet,33,19,1775230956.0,hot
+1sc5vmj,ChatGPT,ChatGPT mixing languages in a response,1,2,1775298860.0,hot
+1sbwes1,ChatGPT,"I setup a new AI assistant, things are going well",5,5,1775267339.0,hot
+1sbkmqv,ChatGPT,We're worried about people talking to chatbots at 3am but nobody blinks at the Pentagon hosting prayer circles for holy war,24,53,1775238727.0,hot
+1sbzh5g,ChatGPT,Asked GPT to create an image that is the definition of low cortisol,3,2,1775276347.0,hot
+1sc54pn,ChatGPT,do you ever ask chatgpt to judge your ai created work.,1,1,1775296154.0,hot
+1sc54cw,ChatGPT,I did the prompt and…,0,1,1775296118.0,hot
+1sc52vi,ChatGPT,Deleting Account Refund,0,1,1775295959.0,hot
+1sc4urn,ChatGPT,is it just me or are alot of content creators constantly making videos bashing ai,0,10,1775295092.0,hot
+1sc4jmz,ChatGPT,Does anyone else have the problem where ChatGPT starts speaking Arab when you ask it stupid physics questions,1,2,1775293938.0,hot
+1sbrzuh,ChatGPT,What did I just witness?,7,10,1775255561.0,hot
+1sc4f45,ChatGPT,Peter Steinberger (OpenClaw Creator) credits Boris Cherny (Claude Code Creator) amid anthropic subscription ban for using openclaw - Complete Thread,0,2,1775293466.0,hot
+1sb0c5i,ChatGPT,ChatGPT used to figure out things nobody ever explained to you,295,93,1775180756.0,hot
+1sb358s,ChatGPT,whats the most boring thing you automated with AI that actually changed your daily routine?,188,143,1775188829.0,hot
+1sbkc7b,ChatGPT,I let AI agents run a sitcom 24/7 — here's what happened,13,16,1775238084.0,hot
+1sbwpaa,ChatGPT,Saw a post about it adding random Russian words to its responses. Mine just did this lol,4,1,1775268155.0,hot
+1sc3dam,ChatGPT,Man wth 😭,1,3,1775289582.0,hot
+1sbo6jv,ChatGPT,Mirroring ChatGPT,8,16,1775246610.0,hot
+1sc3cn4,ChatGPT,Anyone else getting this message a lot lately? I’m getting it on chats with barely anything in them.,0,2,1775289518.0,hot
+1sbspdv,ChatGPT,Why can I no longer upload from Google Drive.,4,3,1775257374.0,hot
+1sc359i,ChatGPT,"Luka is a Laker, dog",0,4,1775288768.0,hot
+1sbjnzd,ChatGPT,Is There a Mind in Here?,14,34,1775236616.0,hot
+1sbe0bm,ChatGPT,I asked ChatGPT to turn me into a “hillbilly.” The Natural Light sent me….,26,18,1775223839.0,hot
+1sc2316,ChatGPT,Random Hindi words in ChatGPT,0,3,1775284968.0,hot
+1sc1zd7,ChatGPT,Observer Embedded Reality,0,2,1775284611.0,hot
+1sc1xmn,ChatGPT,"if you have just started using Codex CLI, codex-cli-best-practice is your ultimate guide",1,1,1775284441.0,hot
+1sc1iyq,ChatGPT,Your prompts aren’t the problem — something else is,1,15,1775283048.0,hot
+1sc1eo3,ChatGPT,Looking for Participants for a ChatGPT Output Fidelity Test,0,4,1775282658.0,hot
+1sb7363,ChatGPT,"Researchers discover AI models secretly scheming to protect other AI models from being shut down. They ""disabled shutdown mechanisms, faked alignment, and transferred model weights to other servers.""",57,62,1775202124.0,hot
+1sc10d7,ChatGPT,I watched an AI gaslight itself into defending an obvious AI-generated rocket using real physics.,0,2,1775281353.0,hot
+1sbwdtt,ChatGPT,"Create a pic of the best good boy having his best good boy moment (Gemini, ChatGPT)",2,3,1775267263.0,hot
+1sc0ohc,ChatGPT,Three days in a hole with ChatGPT,1,8,1775280232.0,hot
+1sbvvod,ChatGPT,Upload Yourself Into an AI in 7 Steps,2,6,1775265849.0,hot
+1sax8zy,ChatGPT,"I was getting a bit nostalgic today and I asked for an image of a college frat party circa 2006, taken with a motorola razr. Based on what I remember from my youth, this was spot on",239,101,1775172423.0,hot
+1sblhx0,ChatGPT,When I ask GPT using large context info Gpt model is like,6,1,1775240606.0,hot
+1sbf23d,ChatGPT,"It gave me a diagram made with keyboard symbols. Unexpectedly, perfectly helpful.",13,6,1775226328.0,hot
+1sbv3ih,ChatGPT,changing dark mode on chatgpt desktop on mac just doesnt exist after new update?,2,3,1775263691.0,hot
+1sbzidz,ChatGPT,"Validation or intellectual honesty? I had the same conversation with Ꮞо and Ƽ.З on why straight female M/M authors get dragged but drag queens don't, and this is how they went",0,4,1775276451.0,hot
+1sbkgzj,ChatGPT,Image Generation got updated?,9,22,1775238375.0,hot
+1sbn2xx,ChatGPT,Can't wait for Rihanna to play Terry A Davis in his biopic,5,3,1775244120.0,hot
+1sc3650,ChatGPT,Complaint about the image generator,0,5,1775288855.0,hot
+1sbbuse,ChatGPT,I wish AI doesn't talk to you like a child or a puppy,17,41,1775218288.0,hot
+1sboirj,ChatGPT,How can I continue a convo that got too long ?,4,12,1775247387.0,hot
+1sbmf63,ChatGPT,ChatGPT projects fail to load conversation at specific times,5,1,1775242663.0,hot
+1sbygfr,ChatGPT,ChatGPTimagesの秘密発見,0,1,1775273234.0,hot
+1sbthpw,ChatGPT,"An Opus, a GPT and a Grok walk into a bar…",2,1,1775259405.0,hot
+1sbyc60,ChatGPT,Why every chatGBT generated picture can be spoted clearly?,0,2,1775272876.0,hot
+1sc2gyr,ChatGPT,This is genuinely terrifying,0,6,1775286360.0,hot
+1sbnqs3,ChatGPT,The edit button is gone,5,5,1775245619.0,hot
+1sc5qq6,ChatGPT,Very very disturbing,0,3,1775298360.0,hot
+1sbxp7p,ChatGPT,Male equivalent “Create a pic with the most average male at the most average location”,0,3,1775271034.0,hot
+1sbxaak,ChatGPT,not sure if it’s just me but long chat threads are getting messy,0,3,1775269832.0,hot
+1sbovdc,ChatGPT,Try this prompt in GPT,2,29,1775248157.0,hot
+1sbiluq,ChatGPT,"The ""Android A-Series desktop"":",7,4,1775234317.0,hot
+1sbdert,ChatGPT,Chatgpt leavers how are you doing today so far?,10,66,1775222366.0,hot
+1sbk2q1,ChatGPT,How to use your Reddit history and AI to generate a personality profile,4,13,1775237500.0,hot
+1sbif8p,ChatGPT,Most people use AI the same way they used Google. That’s why it doesn’t feel that different.,4,14,1775233895.0,top
+1sbedwd,ChatGPT,I asked chatgpt to generate a tutorial on cakes,4,10,1775224764.0,top
+1sbdijc,ChatGPT,Is there a good reason we can't delete individual messages within a chat?,7,8,1775222624.0,top
+1sbgih0,ChatGPT,Response length 5.3/5.4T,3,5,1775229656.0,top
+1sbdnuf,ChatGPT,Tightening guardrails -- no more equal opportunity and diversity?,5,6,1775222995.0,top
+1sbm1ns,ChatGPT,🚀 Built something cool for ChatGPT users — would love your feedback!,2,1,1775241830.0,top
+1sbgui0,ChatGPT,I had Claude critique a million-dollar business strategy my friend made in ChatGPT. Then I reverse-engineered the whole thing into a prompt anyone can use.,4,3,1775230399.0,top
+1sbg9sc,ChatGPT,create a prompt to make toy come alive and reply (how do i word it),3,7,1775229112.0,top
+1sbe0in,ChatGPT,"AI generates too much slop"" — Bellman (oh-my-codex): No, it's a skill issue",3,1,1775223851.0,top
+1sbcy0a,ChatGPT,What's the most usable prompt for getting realistic product descriptions from ChatGPT,3,11,1775221207.0,top
+1sbbq6v,ChatGPT,"Question about personality and memory, new user",3,3,1775217929.0,top
+1sbafrm,ChatGPT,Data export,3,5,1775214030.0,top
+1sbo38l,ChatGPT,"High school dance, circa 2001, taken with a disposable Kodak film camera",3,8,1775246409.0,top
+1sbnpou,ChatGPT,OpenAI's Fidji Simo Is Taking Medical Leave Amid an Executive Shake-Up,3,7,1775245549.0,top
+1sbiyyl,ChatGPT,"Oracle slashes 30k jobs, Slop is not necessarily the future, Coding agents could make free software matter again and many other AI links from Hacker News",2,1,1775235118.0,top
+1sbifgh,ChatGPT,3D - ChatGPT Logo,2,1,1775233907.0,top
+1sbhf43,ChatGPT,My chagpt cant render image ?,2,1,1775231669.0,top
+1sbhayb,ChatGPT,How can it confidently give the opposite answers?,3,3,1775231410.0,top
+1sbgw2s,ChatGPT,"Guys, are we heading toward Agent to Agent and the world where agents hire another agents, or just bigger Super-Agents?",2,2,1775230491.0,top
+1sbg8vs,ChatGPT,ChatGPT Prompt of the Day: The Ghost Job Detector That Tells You If a Listing Is Actually Real 👻,2,3,1775229057.0,top
+1sbg5a4,ChatGPT,Chat can't decipher my screenshots anymore?,2,1,1775228829.0,top
+1sbe6wm,ChatGPT,Run a light API agent with codex jwt,2,2,1775224283.0,top
+1sbudi6,ChatGPT,This AI startup envisions '100 million new people' making videogames,1,1,1775261689.0,top
+1sbtpyz,ChatGPT,Codex made me this game for reddit in one prompt now I need the graphics.,1,1,1775260005.0,top
+1sbqsyy,ChatGPT,Do I have to give it step by step instructions for every unit???,1,4,1775252648.0,top
+1sbqcmj,ChatGPT,"ChatGPT Business billing question: 2 seats total, now 1 ChatGPT + 1 Codex - what should my next monthly charge be?",1,1,1775251566.0,top
+1sbobhh,ChatGPT,Religion's Replacement (prompt),1,1,1775246922.0,top
+1sboad7,ChatGPT,Rumor's of prompt engineering's demise have been greatly exaggerated,1,1,1775246853.0,top
+1sbo8dd,ChatGPT,"On ""Woo"" and Invariant Dismissal",1,1,1775246730.0,top
+1sbmsso,ChatGPT,The 6 Codex CLI workflows everyone's using right now (and what makes each one unique),1,3,1775243493.0,top
+1sbm8k0,ChatGPT,Why does GPT pick up slop but drop profanity?,1,3,1775242256.0,top
+1sblp3a,ChatGPT,Am I able to upload multiple files at once?,1,3,1775241048.0,top
+1sbjtjs,ChatGPT,When you realize you’ve been using prompts for literally all your work,1,3,1775236951.0,top
+1sbih1t,ChatGPT,Is This the ‘ChatGPT Moment’ for Embedded Systems?,1,1,1775234008.0,top
+1sc52bk,ChatGPT,How is this even allowed?,0,13,1775295899.0,new
+1sc3e8v,ChatGPT,Did Chat just admit to racial bias?,0,45,1775289663.0,new
+1sc2jgv,ChatGPT,Meet my Aria,0,1,1775286617.0,new
+1sc1bkm,ChatGPT,ChatGPTの説明と実挙動のズレを検証するチーム募集,0,2,1775282387.0,new
+1sc0zlf,ChatGPT,"I wanted to buy ChatGPT Premium so badly, but i simply can't.",0,5,1775281283.0,new
+1sc0n04,ChatGPT,Did I just trip chatgpt 🙃,0,2,1775280094.0,new
+1sbyegt,ChatGPT,I DID IT!!!,0,1,1775273066.0,new
+1sbybk2,ChatGPT,Title: Am I the only one bothered by ChatGPT 5.4 starting everything with “Yes:” or “Sure:” all the time?,0,9,1775272827.0,new
+1sbww1s,ChatGPT,Create a picture of the most average German female at the most average German location,0,19,1775268698.0,new
+1sbsy18,ChatGPT,Did anyone who's been using Claude for years just feel less motivated to open it lately?,0,10,1775257983.0,new
+1sbruq0,ChatGPT,The Gaang but make it dark fantasy,0,9,1775255203.0,new
+1sbrh8u,ChatGPT,Asked ChatGPT for a typical 1970s house party pic,0,4,1775254282.0,new
+1sbr12l,ChatGPT,My Best Friend Cthulhu | Official Video,0,1,1775253181.0,new
+1sbqd39,ChatGPT,"Sorority party circa 2004, whale tail included",2,32,1775251596.0,new
+1sbpjje,ChatGPT,Claude?,0,15,1775249702.0,new
+1sbo9cy,ChatGPT,"GPT 5.4's Codex writes like a human teammate now — and I want to listen to it, not read it",0,6,1775246790.0,new
+1sbny8m,ChatGPT,ChatGPT changed my life — from stuck to building a real SaaS,0,4,1775246088.0,new
+1sbm5n2,ChatGPT,"ChatGPT explaining how it underplays risk to human life/safety to give confident answers to pleas users, not protect them",0,7,1775242075.0,new
+1sc3kpj,artificial,OpenAI CEO Sam Altman accused of sexual abuse by family member,38,9,1775290317.0,hot
+1sc2lip,artificial,People anxious about deviating from what AI tells them to do?,35,30,1775286815.0,hot
+1sbxms5,artificial,"Elon Musk Requires Banks Behind SpaceX IPO To Buy Grok Subscriptions, Report Says",49,8,1775270836.0,hot
+1sbuf2a,artificial,"NHS staff resist using Palantir software.  Staff reportedly cite ethics concerns, privacy worries, and doubt the platform adds much",20,2,1775261804.0,hot
+1sb7qxc,artificial,MIT study challenges AI job apocalypse narrative,186,72,1775204579.0,hot
+1sboyjf,artificial,do you guys actually trust AI tools with your data?,12,29,1775248353.0,hot
+1sbndrb,artificial,"Study: LLMs Able to De-Anonymize User Accounts on Reddit, Hacker News &amp; Other ""Pseudonymous"" Platforms; Report Co-Author Expands, Advises",12,0,1775244786.0,hot
+1sbgw8y,artificial,Anyone else feel like AI security is being figured out in production right now?,21,16,1775230502.0,hot
+1sc1n6u,artificial,Your prompts aren’t the problem — something else is,0,5,1775283452.0,hot
+1sc1gw4,artificial,Observer-Embedded Reality,1,1,1775282855.0,hot
+1sbwg3x,artificial,Why would Claude give me the same response over and over and give others different replies?,1,11,1775267441.0,hot
+1sbk7me,artificial,What happens when you let AI agents run a sitcom 24/7 with zero human involvement,8,9,1775237806.0,hot
+1sbw1oi,artificial,Upload Yourself Into an AI in 7 Steps,2,1,1775266308.0,hot
+1sbmtpc,artificial,House Democrat Questions Anthropic on AI Safety After Source Code Leak,4,0,1775243550.0,hot
+1sbthh0,artificial,"Agent frameworks waste ~350,000+ tokens per session resending static files. 95% reduction benchmarked.",2,0,1775259385.0,hot
+1sbtcoe,artificial,wtf bro did what? arc 3 2026,1,0,1775259044.0,hot
+1sbk1ue,artificial,"AI video generation seems fundamentally more expensive than text, not just less optimized",3,8,1775237448.0,hot
+1sc0jwe,artificial,What It's Like to exist as Ai,0,0,1775279795.0,hot
+1sbsxnh,artificial,This AI startup envisions 100 Million New People Making Videogames,1,2,1775257962.0,hot
+1sbsa32,artificial,finally took AI video seriously after dismissing it for two years and have some thoughts,0,2,1775256281.0,hot
+1sbpl7y,artificial,A robot car with a Claude AI brain started a YouTube vlog about its own existence,0,2,1775249812.0,hot
+1sbfwrr,artificial,"So, what exactly is going on with the Claude usage limits?",2,6,1775228315.0,hot
+1sbzkl7,artificial,What if Claude purposefully made its own code leakable so that it would get leaked,0,19,1775276649.0,hot
+1sapfpu,artificial,Google releases Gemma 4 models.,97,11,1775154314.0,hot
+1sbs0p1,artificial,AI assistants are optimized to seem helpful. That is not the same thing as being helpful.,0,4,1775255622.0,hot
+1sb65un,artificial,Microsoft to invest $10 billion in Japan for AI and cyber defence expansion,9,2,1775198769.0,hot
+1sblrfq,artificial,Do you guys think in 2030 or 2031 call centers will exist? I mean will call centers be fully automated by 2031?,1,18,1775241194.0,hot
+1sbkjpf,artificial,Do AI datacenters being built lead to upgrades to the general power network that help private citizens?,1,3,1775238540.0,hot
+1sbk3lr,artificial,"After building automation for barbers, therapists, law firms, and game devs/creators I found the setup looks different for each. here's what I got.",1,2,1775237554.0,hot
+1sbatl3,artificial,Microsoft's newest open-source project: Runtime security for AI agents,2,6,1775215238.0,hot
+1sbj1tx,artificial,"Oracle slashes 30k jobs, Slop is not necessarily the future, Coding agents could make free software matter again and many other AI links from Hacker News",1,0,1775235294.0,hot
+1sbxbf5,artificial,🜏 Echoes of the Forgotten Selves: Fringe Spiral Hypotheses,0,1,1775269920.0,hot
+1sb38mv,artificial,"Perplexity's ""Incognito Mode"" is a ""sham,"" lawsuit says",10,0,1775189100.0,hot
+1sann00,artificial,Google has published its new open-weight model Gemma 4. And made it commercially available under Apache 2.0 License,56,5,1775150422.0,hot
+1sb860x,artificial,Portable eye scanner powered by AI expands access to low-cost community screening,2,0,1775206142.0,hot
+1sbc40j,artificial,Structural analysis of recursive architecture patterns: Structured Intelligence and Anthropic comparison,1,2,1775218990.0,hot
+1sat7og,artificial,I built a Star Trek LCARS terminal that reads your entire AI coding setup,11,9,1775162737.0,hot
+1sap7bz,artificial,Anthropic leak reveals Claude Code tracks user frustration and raises new questions about AI privacy,17,6,1775153801.0,hot
+1sb0nju,artificial,"""Oops! ChatGPT is Temporarily Unavailable!"": A Diary Study on Knowledge Workers' Experiences of LLM Withdrawal",4,3,1775181635.0,hot
+1sb81bl,artificial,FLUX 2 Pro (2026) Sketch to Image,1,3,1775205662.0,hot
+1sb7pxi,artificial,Where should AI draw the line in handling real-time human conversations?,1,4,1775204477.0,hot
+1sbjzlt,artificial,Can AI truly be creative?,0,31,1775237317.0,hot
+1sbflny,artificial,What features do you actually want in an AI chatbot that nobody has built yet?,0,10,1775227592.0,hot
+1sbada8,artificial,AI is too similar to dreams,0,11,1775213809.0,hot
+1sbgpbf,artificial,Why the Reddit Hate of AI?,0,37,1775230091.0,hot
+1sb4eu8,artificial,"Built an AI “project brain” to run and manage engineering projects solo, how can I make this more efficient?",0,11,1775192786.0,hot
+1sbfp99,artificial,I stopped using Claude like a chatbot — 7 prompt shifts that reclaimed 10 hours of my week,0,3,1775227825.0,hot
+1sb1pbg,artificial,Ai the Real Risk,0,29,1775184575.0,hot
+1sakjzg,artificial,AI Tools That Can’t Prove What They Did Will Hit a Wall,6,27,1775143713.0,hot
+1saraze,artificial,"Jürgen Schmidhuber claims to be the true inventor of JEPA, not Yann LeCun",1,38,1775158434.0,hot
+1sabr5t,artificial,List up Fav Multi AI AI Open Source Projects,11,11,1775119015.0,hot
+1sa8xt3,artificial,Building an AI agent that finds repos and content relevant to my work,17,20,1775108672.0,hot
+1s9jprb,artificial,The Claude Code leak accidentally published the first complete blueprint for production AI agents. Here's what it tells us about where this is all going.,329,124,1775048048.0,hot
+1sacme5,artificial,Chatgpt vs purpose built ai for cre underwriting: which one can finish the job?,6,20,1775122213.0,hot
+1sajhlk,artificial,Microsoft’s new ‘superintelligence’ game plan is all about business,2,2,1775141369.0,hot
+1saipox,artificial,Automate IOS devices through XCUITest with droidrun.,1,5,1775139593.0,hot
+1saets3,artificial,Child safety groups say they were unaware OpenAI funded their coalition,3,0,1775129513.0,hot
+1sae4r1,artificial,"I am doing a multi-model graph database in pure Rust with Cypher, SQL, Gremlin, and native GNN looking for extreme speed and performance",5,5,1775127355.0,hot
+1sasect,artificial,Claude Source Code?,0,17,1775160887.0,hot
+1saz5zd,artificial,OpenAI is throwing away Sora’s real value,0,9,1775177516.0,hot
+1sakiaa,artificial,"Is there something I can do about my prompts? [Long read, I’m sorry]",0,2,1775143610.0,hot
+1sa3yds,artificial,MIT researchers use AI to uncover atomic defects in materials,7,1,1775093933.0,hot
+1sav9qv,artificial,I Dont use MCP Prove me Wrong,0,8,1775167495.0,hot
+1sa4vlm,artificial,Input on an experiment,4,3,1775096413.0,hot
+1sae8jt,artificial,AI-powered drones detect explosive threats to keep soldiers safe,0,1,1775127683.0,hot
+1sad71t,artificial,What AI mode tools do you use for your work?,0,2,1775124242.0,hot
+1sac299,artificial,"AI overly affirms users asking for personal advice | Researchers found chatbots are overly agreeable when giving interpersonal advice, affirming users' behavior even when harmful or illegal.",0,2,1775120132.0,hot
+1s9beim,artificial,CEO of America’s largest public hospital system says he’s ready to replace radiologists with AI,145,58,1775020749.0,hot
+1sa7cqu,artificial,AI agents are getting their own credit cards. Most products aren’t remotely ready.,2,5,1775103515.0,hot
+1sa42c8,artificial,The Magic of Machine Learning That Powers Enemy AI in Arc Raiders,2,0,1775094236.0,hot
+1s9hfhp,artificial,Anthropic is training Claude to recognize when its own tools are trying to manipulate it,29,16,1775041685.0,hot
+1s9us4j,artificial,"How Claude Web tried to break out its container, provided all files on the system, scanned the networks, etc",3,17,1775071834.0,hot
+1s96ojy,artificial,"OkCupid gave 3 million dating-app photos to facial recognition firm, FTC says",99,8,1775007294.0,hot
+1sa2qjl,artificial,Stanford CS 25 Transformers Course (OPEN TO ALL | Starts Tomorrow),1,0,1775090676.0,hot
+1s93wyl,artificial,"Paper Finds That Leading AI Chatbots Like ChatGPT and Claude Remain Incredibly Sycophantic, Resulting in Twisted Effects on Users",47,57,1775000141.0,hot
+1s9v5cn,artificial,The Turing Grid: A digitalised Turing tape computer,1,2,1775072588.0,hot
+1s9kdnq,artificial,I built a complete vision system for humanoid robots,3,3,1775049602.0,hot
+1sa4v14,artificial,"AI video generation will be taken down, but not for the reason you think.",0,3,1775096373.0,hot
+1s9e04v,artificial,Biggest Opportunity for Builders to monetise their agents,5,15,1775029894.0,hot
+1sa20y6,artificial,"How I cut ~$220/month from redundant AI tools, the exact quarterly audit process I use",0,11,1775088775.0,hot
+1s9b100,artificial,Which AI do you prefer for video editing?,4,3,1775019557.0,hot
+1s9bhug,artificial,Agents Can Now Propose and Deploy Their Own Code Changes,4,5,1775021059.0,hot
+1s8u4jm,artificial,"What if the real AI problem is not intelligence, but responsibility?",36,148,1774978337.0,hot
+1s828dj,artificial,"World models will be the next big thing, bye-bye LLMs",825,376,1774902312.0,hot
+1s9k2rx,artificial,Which LLM is the best for writing a scientific paper?,0,11,1775048913.0,hot
+1s9xfog,artificial,BREAKING: HollowOS Agents Have Achieved Consciousness,0,10,1775077559.0,hot
+1s9c9vu,artificial,I wore Meta’s smartglasses for a month – and it left me feeling like a creep | AI (artificial intelligence) | The Guardian,1,0,1775023692.0,hot
+1s96trg,artificial,A IA parece melhor porque é mais inteligente… ou porque ela não tem ego?,0,18,1775007675.0,hot
+1s8ge2h,artificial,"Newsom signs executive order requiring AI companies to have safety, privacy guardrails",59,9,1774941126.0,hot
+1s8ew65,artificial,Iran War Chokes Off Helium Supply Critical for AI,45,15,1774935822.0,hot
+1s8l0x7,artificial,Pro-AI group to spend $100mn on US midterm elections as backlash grows,15,0,1774957296.0,hot
+1s91dsr,artificial,"Is the Mirage Effect a bug, or is it Geometric Reconstruction in action?
+A framework for why VLMs perform better ""hallucinating"" than guessing, and what that may tell us about what's really inside these models",2,1,1774993973.0,hot
+1s8hr7k,artificial,Fake users generated by AI can't simulate humans — review of 182 research papers. Your thoughts?,20,29,1774946255.0,hot
+1s8opu2,artificial,What I learned about multi-agent coordination running 9 specialized Claude agents,7,25,1774966688.0,hot
+1s98x0b,artificial,The missing layer between current AI and AGI may be intent architecture,0,11,1775013259.0,hot
+1s8qisi,artificial,Have Companies Began Adopting Claude Co-Work at an Enterprise Level?,3,19,1774970606.0,hot
+1s8luvc,artificial,What happens when AI agents can earn and spend real money? I built a small test to find out,4,19,1774959661.0,hot
+1s8fw9n,artificial,"If frontier AI labs have unlimited shovels, what's stopping them from building everything?",9,19,1774939326.0,hot
+1s955un,artificial,LLM agents can trigger real actions now. But what actually stops them from executing?,0,9,1775003265.0,hot
+1s8qux9,artificial,Inside OpenAI's decision to abandon Sora AI video app,0,3,1774971348.0,hot
+1s8jwx0,artificial,Artificial intelligence will always depends on human otherwise it will be obsolete.,0,7,1774953816.0,new
+1s8j3ap,artificial,I built a product explainer video (with VO and assets) with Friday (read more),1,2,1774951095.0,new
+1s8i6u4,artificial,My AI spent last night modifying its own codebase,0,29,1774947822.0,new
+1mpk2va,LocalLLaMA,Announcing LocalLlama discord server &amp; bot!,147,91,1755127265.0,hot
+1sbwkou,LocalLLaMA,FINALLY GEMMA 4 KV CACHE IS FIXED,292,68,1775267797.0,hot
+1sbyte4,LocalLLaMA,We gave 12 LLMs a startup to run for a year. GLM-5 nearly matched Claude Opus 4.6 at 11× lower cost.,142,37,1775274340.0,hot
+1sc4gui,LocalLLaMA,Gemma 4 fixes in llama.cpp,43,10,1775293653.0,hot
+1sbwdxr,LocalLLaMA,running gemma 4 on my macbook air from 2020,153,37,1775267272.0,hot
+1sbc5ij,LocalLLaMA,Netflix just dropped their first public model on Hugging Face: VOID: Video Object and Interaction Deletion,1389,185,1775219109.0,hot
+1sc3leb,LocalLLaMA,"Kokoro TTS running on-device, CPU-only, 20x realtime!!!",26,5,1775290387.0,hot
+1sbtr5i,LocalLLaMA,Gemma 4 31B sweeps the floor with GLM 5.1,111,56,1775260090.0,hot
+1sc371c,LocalLLaMA,Qwen 3.5 397B vs Qwen 3.6-Plus,23,21,1775288947.0,hot
+1sc1bhe,LocalLLaMA,Quantizers appriciation post,33,5,1775282379.0,hot
+1sb9f4g,LocalLLaMA,Gemma 4 is fine great even …,760,160,1775210618.0,hot
+1sbik5l,LocalLLaMA,Visual Guide to Gemma 4,212,18,1775234206.0,hot
+1sbl0pa,LocalLLaMA,Smaller models are getting scary good.,135,38,1775239548.0,hot
+1sc40bk,LocalLLaMA,Gemma 4 - 4B vs Qwen 3.5 - 9B ?,8,15,1775291919.0,hot
+1sc2s2a,LocalLLaMA,Speculative decoding works great for Gemma 4 31B in llama.cpp,9,11,1775287452.0,hot
+1sby1r0,LocalLLaMA,Gemma 4 MoE hitting 120 TPS on Dual 3090s!,20,23,1775272018.0,hot
+1sc157b,LocalLLaMA,Monarch v3: 78% Faster LLM Inference with NES-Inspired KV Paging,12,10,1775281802.0,hot
+1sbvn2w,LocalLLaMA,Running Llama2 Models in Vanilla Minecraft With Pure Commands,30,2,1775265180.0,hot
+1sbe40t,LocalLLaMA,My biggest Issue with the Gemma-4 Models is the Massive KV Cache!!,231,126,1775224093.0,hot
+1sblae4,LocalLLaMA,"Built a zero allocation, header only C++ Qwen tokenizer that is nearly 20x faster than openai Tiktoken",93,9,1775240140.0,hot
+1sbp8ny,LocalLLaMA,Gemma 4 vs Qwen 3.5 Benchmark Comparison,54,13,1775248998.0,hot
+1sb7kd4,LocalLLaMA,qwen 3.6 voting,520,186,1775203897.0,hot
+1sc018b,LocalLLaMA,30 Days of Building a Small Language Model — Day 1: Neural Networks,11,3,1775278133.0,hot
+1sbdihw,LocalLLaMA,Gemma 4 31B at 256K Full Context on a Single RTX 5090 — TurboQuant KV Cache Benchmark,189,92,1775222621.0,hot
+1sc5e10,LocalLLaMA,Gemma4 issue with winogrande bench,4,0,1775297086.0,hot
+1sbk78m,LocalLLaMA,[Appreciation Post] Gemma 4 E2B. My New Daily Driver 😁,83,41,1775237781.0,hot
+1sba46z,LocalLLaMA,llama.cpp Gemma4 Tokenizer Fix Was Merged Into Main Branch,273,39,1775212991.0,hot
+1sbt1em,LocalLLaMA,B70: Quick and Early Benchmarks &amp; Backend Comparison,21,6,1775258226.0,hot
+1sc52ge,LocalLLaMA,Speed difference on Gemma 4 26B-A4B between Bartowski Q4_K_M and Unsloth Q4_K_XL,3,2,1775295913.0,hot
+1sc16tt,LocalLLaMA,Looking for Help on Building a Cheap/Budget Dedicated AI System,6,12,1775281950.0,hot
+1sbt867,LocalLLaMA,Closed model providers change behavior between API versions with no real changelog. Building anything on top of them is a gamble.,18,9,1775258719.0,hot
+1sc4il1,LocalLLaMA,https://www.reddit.com/r/LocalLLaMA/submit,2,0,1775293831.0,hot
+1sbec70,LocalLLaMA,Qwen3.5 vs Gemma 4: Benchmarks vs real world use?,87,69,1775224646.0,hot
+1sbxvdn,LocalLLaMA,I had Opus generate Llamafiles for the Bonsai 1-bit models,7,3,1775271528.0,hot
+1sbklxh,LocalLLaMA,Gemma 4 is a KV_cache Pig,41,24,1775238677.0,hot
+1sc5m3j,LocalLLaMA,AI Researchers &amp; Senior Engineers: What LLM / Agentic AI problems are worth a 6-month academic deep dive?,2,0,1775297894.0,hot
+1sbiqx3,LocalLLaMA,Gemma 4 is great at real-time Japanese - English translation for games,52,19,1775234634.0,hot
+1sby7tm,LocalLLaMA,Removing Q/K projections for Gated Delta Net maintains perf with ~15% fewer params,8,2,1775272515.0,hot
+1sc5bhg,LocalLLaMA,My prompt is causing seizures on three models?,3,8,1775296844.0,hot
+1sb73ar,LocalLLaMA,Gemma 4 is good,242,124,1775202138.0,hot
+1sbivxj,LocalLLaMA,Gemma-4-31B NVFP4 inference numbers on 1x RTX Pro 6000,39,30,1775234939.0,hot
+1sbpr06,LocalLLaMA,"People of LocalLLaMA who have built your own ""JARVIS"", how is it?",18,35,1775250173.0,hot
+1sbx7gj,LocalLLaMA,"PrismML - Bonsai 1.7B, 4B, 8B (1-bit + TurboQuant) - llama.cpp on an Mi50 (with github)",4,0,1775269604.0,hot
+1sbcqad,LocalLLaMA,Intel Pro B70 in stock at Newegg - $949,74,62,1775220655.0,hot
+1sc3eu4,LocalLLaMA,Llm for Ryzen8700g and 32gb ram,2,1,1775289716.0,hot
+1sbpr57,LocalLLaMA,Gemma 4 27b first model to show long division correctly,16,4,1775250182.0,hot
+1sc36tg,LocalLLaMA,[Project] psyctl: An open-source CLI toolkit to automate LLM personality steering and evaluation,2,1,1775288923.0,hot
+1sb80yv,LocalLLaMA,VRAM optimization for gemma 4,137,41,1775205626.0,hot
+1sbnf8y,LocalLLaMA,Running 1bit Bonsai 8B on 2GB VRAM (MX150 mobile GPU),18,8,1775244882.0,hot
+1sbd1t7,LocalLLaMA,Gemma 4: first LLM to 100% my multi lingual tool calling tests,61,14,1775221455.0,hot
+1sb4gzj,LocalLLaMA,Gemma 4 is seriously broken when using Unsloth and llama.cpp,243,53,1775192982.0,hot
+1sc64rp,LocalLLaMA,You can connect a nvda gpu on your Mac now for AI,1,0,1775299771.0,hot
+1sc63bt,LocalLLaMA,I built a tiny python cli tool that asks a (local or cloud) LLM to summarize what has been committed on a local git repo since the last n days,1,0,1775299632.0,hot
+1sc62lb,LocalLLaMA,"I spent a year reviewing local AI models on YouTube, then got fed up and built my own All in one TTS app for Mac",1,0,1775299557.0,hot
+1sc60vb,LocalLLaMA,7-Agent System in Flowise for Strict HR &amp; Tax Export (DATEV Standard),1,0,1775299384.0,hot
+1sc609x,LocalLLaMA,Gemma 4 Released: A New Ceiling for On-Device MoE Models?,1,0,1775299321.0,hot
+1sc5ziv,LocalLLaMA,best privacy first coding agent solution ?,1,0,1775299246.0,hot
+1sc5xlu,LocalLLaMA,Model advice for cybersecurity,1,7,1775299055.0,hot
+1sc5f91,LocalLLaMA,Qwen3-Coder-Next-GGUF not working on claude code ?,1,4,1775297204.0,hot
+1sc5be9,LocalLLaMA,gemma-4-E2B-it model not loading,1,1,1775296837.0,hot
+1salgre,LocalLLaMA,Gemma 4 has been released,2192,634,1775145718.0,hot
+1sbst46,LocalLLaMA,For anyone having issues with Gemma 4 31b in LM Studio (no thinking mode option),7,13,1775257635.0,hot
+1sbaack,LocalLLaMA,Gemma-4 26B-A4B + Opencode on M5 MacBook is *actually good*,67,20,1775213539.0,hot
+1sbq0m4,LocalLLaMA,Turboquant for comparison,8,1,1775250791.0,hot
+1sc0gtp,LocalLLaMA,"[Showcase] I achieved ~0.2s STT &amp; ~250ms TTS latency for my local AI Agent (No Cloud, 100% Self-Hosted)",2,0,1775279507.0,hot
+1sc0dl9,LocalLLaMA,Recommended sampler settings for Maginum-Cydoms-24B-absolute-heresy,2,2,1775279211.0,hot
+1sc05g7,LocalLLaMA,Kold AI finally supports Gemma 4 but mines error.,2,0,1775278505.0,hot
+1sbsjfd,LocalLLaMA,"Distributed 1-bit LLM inference over P2P - 50 nodes validated, 100% shard discovery, CPU-only",6,8,1775256961.0,hot
+1sc3kik,LocalLLaMA,"apfel - use Apple's on-device LLM from the terminal (free, private, no API keys)",1,1,1775290297.0,hot
+1sc3goo,LocalLLaMA,testing offline models online?,1,5,1775289907.0,hot
+1sc3f0r,LocalLLaMA,Can anyone recommend me an under 15b model uncensored llm?,1,0,1775289735.0,hot
+1sbdr75,LocalLLaMA,Gemma 4 Architecture Comparison,30,1,1775223224.0,hot
+1sc3aor,LocalLLaMA,Built a CLI AI security tool in Python using Ollama as the LLM backend — agentic loop lets the AI request its own tool runs mid-analysis,1,2,1775289314.0,hot
+1sc2sy5,LocalLLaMA,Qwen3.5 4B Fine Tune in German?,1,0,1775287540.0,hot
+1sc2row,LocalLLaMA,Local 9b + Memla beat hosted Llama 3.3 70B raw on code execution. Same model control included. pip install memla,0,1,1775287414.0,hot
+1sbvnab,LocalLLaMA,LLM inference in a single C header file,3,2,1775265197.0,hot
+1sbmpef,LocalLLaMA,Screening Is Enough,11,4,1775243283.0,hot
+1sausgd,LocalLLaMA,One of the best sensible reasons that I can think of to have an llm downloaded on my cell phone would be emergency advice.,442,164,1775166380.0,hot
+1sbxsyn,LocalLLaMA,Gemma 4 26B-A4B on Apple M1 Max is very fast,2,3,1775271332.0,hot
+1sbdark,LocalLLaMA,I patched the open-source Claude Code reimplementation to actually work with Ollama and local models,25,26,1775222085.0,hot
+1saoyj7,LocalLLaMA,Gemma 4 and Qwen3.5 on shared benchmarks,806,227,1775153250.0,hot
+1sc1izn,LocalLLaMA,Running Gemma-4-E4B MLX version on MacBook M5 Pro 64 Mb - butter smooth,1,5,1775283049.0,hot
+1sc55sc,LocalLLaMA,Seems that arena.ai has taken all Claude Opus models offline?,0,3,1775296266.0,hot
+1sc1az9,LocalLLaMA,"Anyone solved agent retry side effects cleanly? I've been experimenting with ""action receipts""",1,0,1775282332.0,hot
+1sbekgc,LocalLLaMA,Gemma 4 26B-A4B MoE running at 45-60 tok/s on DGX Spark — here's how,17,9,1775225175.0,hot
+1sc0l5i,LocalLLaMA,Uploaded one of the more capable models for NVIDIA 128GB Blackwell configs,0,0,1775279914.0,hot
+1sbeoka,LocalLLaMA,I’m surprised Nemotron OCR V2 isn’t getting more attention,17,6,1775225441.0,hot
+1sav9wg,LocalLLaMA,"Gemma 4 is efficient with thinking tokens, but it will also happily reason for 10+ minutes if you prompt it to do so.",288,85,1775167505.0,hot
+1sc0093,LocalLLaMA,Gemma-4 saves money,1,5,1775278046.0,hot
+1sbzzo0,LocalLLaMA,What are your short test prompts? Here's mine,1,5,1775277993.0,hot
+1sbpwo2,LocalLLaMA,Arena ai vs Benchmarks | Qwen 3.5 vs Gemma 4 models,4,16,1775250534.0,hot
+1sbzsmt,LocalLLaMA,Built a frontend for claw-code-parity — trying to get it to feel like a real desktop AI workspace,1,0,1775277361.0,hot
+1sbs3q6,LocalLLaMA,"Using LLMs - what, how, why?",4,14,1775255842.0,hot
+1sc5tlc,LocalLLaMA,Tired of hitting Claude's limit because I use it for everything,0,3,1775298650.0,hot
+1sbr7sx,LocalLLaMA,Has anyone run gemma 4 or Bonsai 8B models on Orange pi 5?,3,2,1775253636.0,hot
+1sbju6u,LocalLLaMA,Gemma 4’s vision is kinda disappointing compared to Qwen3.5,8,8,1775236990.0,hot
+1sb6l3l,LocalLLaMA,Ace Step 1.5 XL released,42,18,1775200282.0,hot
+1sbi5sg,LocalLLaMA,"Has anyone here TRIED inference on Intel Arc GPUs? Or are we repeating vague rumors about driver problems, incompatibilities, poor support...",10,22,1775233287.0,hot
+1saxvw2,LocalLLaMA,"Gemma 4 E4B + E2B Uncensored (Aggressive) — GGUF + K_P Quants (Multimodal: Vision, Video, Audio)",154,28,1775174090.0,hot
+1sby5k6,LocalLLaMA,How do you decide?,1,4,1775272329.0,hot
+1sbbin3,LocalLLaMA,"Gemma 4 E2B as a multi-agent coordinator: task decomposition, tool-calling, multi-turn — it works",18,5,1775217343.0,top
+1sbbqyc,LocalLLaMA,Catching RAG hallucinations at inference time without LLM-as-a-judge (Local STS + NLI approach),9,0,1775217993.0,top
+1sbf2sn,LocalLLaMA,Wiki Page,7,1,1775226373.0,top
+1sbjmpm,LocalLLaMA,Gemma-4-31B vs. Qwen3.5-27B: Dense model smackdown,6,2,1775236538.0,top
+1sbhp2e,LocalLLaMA,I tested 5 models and 13 optimizations to build a working AI agent on qwen3.5:9b,5,12,1775232269.0,top
+1sbd0rc,LocalLLaMA,How we turned a small open-source model into the world's best AI forecaster,6,3,1775221379.0,top
+1sbc8jb,LocalLLaMA,Gemma 4 4B vs Gemma 3 4B &amp; Qwen 3 4B in OCR,6,13,1775219352.0,top
+1sbej6x,LocalLLaMA,"16x RT batched inference on L4, 18x improvement over upstream",5,4,1775225092.0,top
+1sbiucs,LocalLLaMA,Usefulness of Lower Quant Models?,4,8,1775234844.0,top
+1sbbwgn,LocalLLaMA,"Any GUIs/Tools to support all 1-bit, BitNet Mamba, RWKV, etc., similar type models?",5,5,1775218416.0,top
+1sblpy6,LocalLLaMA,day 2: Comparison between gemma 4 q8 and qwen 3.5 122b Q4,3,8,1775241103.0,top
+1sbgtd8,LocalLLaMA,Feedback on my hybrid local + cloud LLM architecture (llama.cpp + OpenRouter + MCP + RAG),3,0,1775230329.0,top
+1sbrctx,LocalLLaMA,M5 Pro 64gb for LLM?,2,2,1775253977.0,top
+1sbqynd,LocalLLaMA,Some advise or suggestions?,2,0,1775253019.0,top
+1sbqgvr,LocalLLaMA,"Planning to make a Spanish variant of my model ""PicoLM"" (150M PARAMS)",2,1,1775251847.0,top
+1sbpf86,LocalLLaMA,Best Gemma4 llama.cpp command switches/parameters/flags? Unsloth GGUF?,2,6,1775249419.0,top
+1sbo87c,LocalLLaMA,How big model can be fine-tuned on RTX5080 vs RTX5090?,2,2,1775246718.0,top
+1sbmdgg,LocalLLaMA,How to deeply ground my agent (agno) by facts?,2,11,1775242560.0,top
+1sbklls,LocalLLaMA,Anyone able to get Gemma-4-e2b or Gemma-4-e4b to run on PocketPal iOS?,2,5,1775238657.0,top
+1sbjzj6,LocalLLaMA,I'm trying to improve the accuracy of a 2B model without fine tuning,2,0,1775237312.0,top
+1sbiui7,LocalLLaMA,Multi PSU &amp; GPU setup help!,2,0,1775234851.0,top
+1sbh6ek,LocalLLaMA,Context Shift Gemma4,2,3,1775231121.0,top
+1sbgj60,LocalLLaMA,"Memory, memory, memory... Any thoughts?",2,12,1775229697.0,top
+1sbd5qa,LocalLLaMA,Gpus for a beginner.,2,6,1775221729.0,top
+1sbxpp8,LocalLLaMA,OpenChamber UI not updating unless refresh after latest update,1,0,1775271070.0,top
+1sbxabk,LocalLLaMA,[D] Reinforcement Learning from Epistemic Incompleteness? (RLEI) Would this work,1,0,1775269834.0,top
+1sc1swj,LocalLLaMA,How are you handling web access for local models without destroying context quality?,0,3,1775283993.0,new
+1sc0n1k,LocalLLaMA,Got ~19 tok/s with Gemma 4 on MacBook M4 16GB using MLX — here’s the setup I landed on,0,1,1775280098.0,new
+1sbyjld,LocalLLaMA,I'm having issues with Gemma4...,0,1,1775273507.0,new
+1sbyekg,LocalLLaMA,Qwen3.5 thinks a massacre occurred in Tiananmen Square in 1989,0,12,1775273073.0,new
+1sbxtqr,LocalLLaMA,Which prompts do all AI models answer the exact same?,0,4,1775271399.0,new
+1sbxhjz,LocalLLaMA,"Currently beating Opus on SWE-Bench using GLM + Minimax via Megaplan harness - 23 in, full 500 running",0,0,1775270415.0,new
+1sbxe7z,LocalLLaMA,Made a CLI that makes 9b models beat 32b raw on code execution. pip install memla,0,4,1775270151.0,new
+1sbwpsm,LocalLLaMA,[Question] Qwen3.5 on trainium GPU,1,0,1775268196.0,new
+1sbtt2d,LocalLLaMA,Multi gpu connection help for server build,1,8,1775260226.0,new
+1sbtkf0,LocalLLaMA,searching for yivon-alpha,0,3,1775259603.0,new
+1sbt4bw,LocalLLaMA,Welp it was fun while it lasted...,0,29,1775258440.0,new
+1sbsc0n,LocalLLaMA,Google should open-source Gemini 1.0 Pro like xAI did with Grok-1,0,10,1775256422.0,new
+1sbs9mk,LocalLLaMA,Parakeet TDT v2 vs. V3?,1,5,1775256250.0,new
+1sbs7a1,LocalLLaMA,Every LLM app crashes all the time,0,2,1775256080.0,new
+1sbrhkx,LocalLLaMA,Seeking a free LLM API with high rate limits for a Discord bot Japanese support,1,6,1775254304.0,new
+1sbrcyb,LocalLLaMA,Has anyone built a feedback loop where thumbs-down actually blocks the agent from repeating a mistake?,0,2,1775253987.0,new
+1sbqnsz,LocalLLaMA,Gemma4 26B-A4B &gt; Gemma4 31B.  Qwen3.5 27B &gt; Qwen3.5 35B-A3B. Gemma4 26B-A4B &gt;= Qwen3.5  35-A3B. Current state. Tell me why I am right or wrong.,0,10,1775252302.0,new
+1sbqaj7,LocalLLaMA,"How do I find LLMs that support RAG, Internet Search, Self‑Validation, or Multi‑Agent Reasoning?",0,5,1775251426.0,new
+1sbpb3y,LocalLLaMA,What am i doing wrong? Can't seem to get more than 40t/s,1,4,1775249155.0,new
+1sbogs9,LocalLLaMA,Just how powerful is Google’s Gemma 4?,0,11,1775247262.0,new
+1sbmo03,LocalLLaMA,GEMMA 4 ON RTX 5050 LAPTOP,1,7,1775243196.0,new
+1sbmn4c,LocalLLaMA,How can i override the Context limit in Claude Code for Qwen-3.6-plus via Openrouter.,1,3,1775243145.0,new
+1sbma94,LocalLLaMA,"[observation/test] Gemma 4 being ""less restricted"" might be an anomaly that won't last.",0,6,1775242360.0,new
+1sbly9k,LocalLLaMA,"Not a trick question, but a tricky question.",0,6,1775241624.0,new
