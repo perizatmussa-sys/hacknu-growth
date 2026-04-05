@@ -1,8 +1,3 @@
-"""
-master_analysis.py
-Run from your project root: python analysis/master_analysis.py
-Outputs all charts to data/processed/
-"""
 
 import pandas as pd
 import numpy as np
@@ -485,73 +480,6 @@ def chart_rate_limit(df):
     return praise_total, complaint_total
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# 8.  CHART 5 — YouTube deep-dive  (even with 53 videos, rich insights)
-# ─────────────────────────────────────────────────────────────────────────────
-
-def chart_youtube(youtube):
-    if len(youtube) < 5:
-        print("  ⚠️  Skipping YouTube chart (too few videos)")
-        return
-
-    fig, axes = plt.subplots(2, 2, figsize=(14, 10))
-    fig.suptitle("YouTube: How Claude Content Gets Millions of Views",
-                 fontsize=13, fontweight="bold")
-
-    # ── A: Views by engagement rate ───────────────────────────────────────
-    axes[0,0].scatter(youtube["engagement_rate"], youtube["views"]/1e6,
-                      s=60, color=PURPLE, alpha=0.7, edgecolors="white")
-    for _, row in youtube.nlargest(5,"views").iterrows():
-        axes[0,0].annotate(row["channel"][:20],
-            (row["engagement_rate"], row["views"]/1e6),
-            xytext=(4,4), textcoords="offset points", fontsize=7)
-    axes[0,0].set_xlabel("Engagement rate (%)")
-    axes[0,0].set_ylabel("Views (millions)")
-    axes[0,0].set_title("Higher engagement → more views?")
-
-    # ── B: Top channels by total views ────────────────────────────────────
-    top_ch = youtube.groupby("channel")["views"].sum().nlargest(10) / 1e6
-    axes[0,1].barh(top_ch.index, top_ch.values, color=PURPLE, alpha=0.85, edgecolor="white")
-    axes[0,1].set_xlabel("Total views (millions)")
-    axes[0,1].set_title("Top 10 channels by total views")
-
-    # ── C: Duration vs views ──────────────────────────────────────────────
-    yt_dur = youtube[youtube["duration_min"] > 0].copy()
-    if len(yt_dur) > 3:
-        yt_dur["dur_bucket"] = pd.cut(yt_dur["duration_min"],
-                                      bins=[0,1,5,10,20,60,999],
-                                      labels=["<1m","1-5m","5-10m","10-20m","20-60m","60m+"])
-        dur_views = yt_dur.groupby("dur_bucket")["views"].median()/1e6
-        axes[1,0].bar(dur_views.index.astype(str), dur_views.values,
-                      color=TEAL, alpha=0.85, edgecolor="white")
-        axes[1,0].set_xlabel("Video duration")
-        axes[1,0].set_ylabel("Median views (millions)")
-        axes[1,0].set_title("Which video length gets most views?\n(parsed from ISO 8601 duration format)")
-
-    # ── D: Content type from title ─────────────────────────────────────────
-    youtube["is_comparison"] = youtube["title"].str.contains(
-        r"vs|versus|better|comparison", case=False, na=False)
-    youtube["is_tutorial"]   = youtube["title"].str.contains(
-        r"how to|tutorial|guide|tips", case=False, na=False)
-    youtube["is_reaction"]   = youtube["title"].str.contains(
-        r"surprised|mind.?blow|wow|incredible|insane", case=False, na=False)
-
-    type_views = {
-        "Comparison/VS": youtube[youtube["is_comparison"]]["views"].median(),
-        "Tutorial/Guide": youtube[youtube["is_tutorial"]]["views"].median(),
-        "Reaction/Wow": youtube[youtube["is_reaction"]]["views"].median(),
-        "Other": youtube[
-            ~youtube["is_comparison"] & ~youtube["is_tutorial"] & ~youtube["is_reaction"]
-        ]["views"].median(),
-    }
-    axes[1,1].bar(type_views.keys(), [v/1e6 for v in type_views.values()],
-                  color=[CORAL,GREEN,AMBER,GRAY], alpha=0.85, edgecolor="white")
-    axes[1,1].set_ylabel("Median views (millions)")
-    axes[1,1].set_title("Which YouTube content format wins?\n(title pattern analysis)")
-    plt.setp(axes[1,1].xaxis.get_majorticklabels(), rotation=15, ha="right")
-
-    plt.tight_layout(pad=2)
-    save("chart5_youtube_deepdive.png")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
