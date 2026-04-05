@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Viral Growth Machine — HackNU 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Segoe UI", sans-serif; background: #0f0f0f; color: #fff; line-height: 1.6; }
+        .header { background: #1a1a1a; border-bottom: 2px solid #333; padding: 1.5rem 3rem; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { font-size: 1.6rem; font-weight: 700; }
+        .header p { color: #888; font-size: 0.85rem; margin-top: 0.2rem; }
+        .badge { background: #ff4500; color: white; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; display: inline-block; }
+        .live-indicator { display: inline-flex; align-items: center; gap: 0.4rem; margin-left: 0.75rem; font-size: 0.75rem; color: #22c55e; font-weight: 600; }
+        .live-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; animation: pulse 1s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+        .last-updated { color: #555; font-size: 0.72rem; margin-top: 0.25rem; }
+        .refresh-btn { background: #ff4500; color: white; border: none; padding: 0.5rem 1.2rem; border-radius: 8px; font-size: 0.82rem; cursor: pointer; font-weight: 600; margin-top: 0.5rem; }
+        .refresh-btn:hover { background: #e03d00; }
+        .refresh-btn:disabled { background: #555; cursor: not-allowed; }
+        .urgent-banner { display: none; background: #1a0000; border: 2px solid #ef4444; border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; animation: urgentPulse 2s infinite; }
+        .urgent-banner.active { display: block; }
+        @keyframes urgentPulse { 0%, 100% { border-color: #ef4444; } 50% { border-color: #ff8888; } }
+        .urgent-top { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+        .urgent-dot { width: 12px; height: 12px; border-radius: 50%; background: #ef4444; animation: pulse 0.5s infinite; flex-shrink: 0; }
+        .urgent-title { font-size: 0.85rem; font-weight: 700; color: #ef4444; text-transform: uppercase; letter-spacing: 0.08em; }
+        .urgent-post-title { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem; line-height: 1.4; }
+        .urgent-meta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+        .urgent-score { font-size: 0.8rem; color: #ef4444; font-weight: 700; }
+        .urgent-sub { font-size: 0.8rem; color: #888; }
+        .urgent-action { font-size: 0.82rem; color: #f59e0b; font-weight: 600; margin-bottom: 0.75rem; }
+        .urgent-btn { background: #ef4444; color: white; border: none; padding: 0.5rem 1.25rem; border-radius: 8px; font-size: 0.82rem; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; }
+        .alerts-bar { margin-bottom: 1.5rem; }
+        .alert-pill { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.78rem; margin-right: 0.5rem; margin-bottom: 0.5rem; cursor: pointer; }
+        .alert-green { background: rgba(34,197,94,0.15); border: 1px solid #22c55e; color: #22c55e; }
+        .alert-yellow { background: rgba(245,158,11,0.15); border: 1px solid #f59e0b; color: #f59e0b; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 3rem; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+        .metric-card { background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 1.5rem; text-align: center; }
+        .metric-card:hover { border-color: #ff4500; }
+        .metric-value { font-size: 2.2rem; font-weight: 700; color: #ff4500; display: block; }
+        .metric-label { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.25rem; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+        .section { background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .section h2 { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid #333; display: flex; align-items: center; gap: 0.5rem; }
+        .dot { width: 8px; height: 8px; border-radius: 50%; background: #ff4500; display: inline-block; flex-shrink: 0; }
+        .bar-item { margin-bottom: 0.75rem; }
+        .bar-label { display: flex; justify-content: space-between; margin-bottom: 0.3rem; font-size: 0.82rem; }
+        .bar-label span:first-child { color: #ccc; }
+        .bar-label span:last-child { color: #ff4500; font-weight: 600; }
+        .bar-track { background: #333; border-radius: 4px; height: 7px; overflow: hidden; }
+        .bar-fill { height: 100%; border-radius: 4px; background: #ff4500; }
+        .post-item { padding: 0.6rem 0; border-bottom: 1px solid #222; display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; cursor: pointer; }
+        .post-item:hover { background: #1f1f1f; padding-left: 0.5rem; border-radius: 4px; }
+        .post-item:last-child { border-bottom: none; }
+        .post-title { font-size: 0.78rem; color: #ccc; flex: 1; line-height: 1.4; }
+        .post-score { font-size: 0.85rem; font-weight: 700; color: #ff4500; white-space: nowrap; }
+        .keyword-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .keyword-tag { background: #222; border: 1px solid #444; border-radius: 20px; padding: 0.3rem 0.75rem; font-size: 0.75rem; color: #ccc; }
+        .keyword-tag.big { border-color: #ff4500; color: #ff4500; font-weight: 600; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        th { background: #222; color: #888; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; padding: 0.6rem 0.75rem; text-align: left; }
+        td { padding: 0.6rem 0.75rem; border-bottom: 1px solid #222; color: #ccc; }
+        tr:last-child td { border-bottom: none; }
+        .win { color: #22c55e; font-weight: 600; }
+        .lose { color: #ef4444; font-weight: 600; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .footer { text-align: center; padding: 2rem; color: #444; font-size: 0.75rem; border-top: 1px solid #222; margin-top: 2rem; }
+        @media (max-width: 768px) { .metrics-grid { grid-template-columns: repeat(2,1fr); } .two-col { grid-template-columns: 1fr; } .container { padding: 1rem; } .header { padding: 1rem; flex-direction: column; gap: 1rem; } }
+    </style>
+</head>
+<body>
+
+<div id="refresh-overlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:1000;flex-direction:column;align-items:center;justify-content:center;gap:1rem;">
+    <div style="width:50px;height:50px;border:3px solid #333;border-top-color:#ff4500;border-radius:50%;animation:spin 0.8s linear infinite;"></div>
+    <div style="color:#fff;font-size:1rem;font-weight:600;">Scraping Reddit...</div>
+    <div style="color:#888;font-size:0.8rem;">Please wait — collecting fresh data and rebuilding dashboard</div>
+</div>
+
+<div class="header">
+    <div>
+        <h1>Claude Viral Growth Machine</h1>
+        <p>HackNU 2026 — Competitive Intelligence Dashboard</p>
+    </div>
+    <div style="text-align:right">
+        <div>
+            <span class="badge">636 Real Reddit Posts</span>
+            <span class="live-indicator"><span class="live-dot"></span> LIVE</span>
+        </div>
+        <div class="last-updated">Last updated: 2026-04-05 10:36</div>
+        <button class="refresh-btn" id="refresh-btn" onclick="triggerRefresh()">Refresh Data</button>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="urgent-banner active">
+        <div class="urgent-top">
+            <div class="urgent-dot"></div>
+            <div class="urgent-title">Something is happening right now — immediate action required</div>
+        </div>
+        <div class="urgent-post-title">agentsBeforeAIAgentWasAThing</div>
+        <div class="urgent-meta">
+            <span class="urgent-score">Score: 18,338</span>
+            <span class="urgent-sub">r/ProgrammerHumor</span>
+        </div>
+        <div class="urgent-action">Engage immediately — analyse this post format and replicate it</div>
+        <a class="urgent-btn" href="https://reddit.com/r/ProgrammerHumor/comments/1rzw54v/agentsbeforeaiagentwasathing/" target="_blank">View Post on Reddit</a>
+    </div>
+
+    <div class="alerts-bar"><div class="alert-pill alert-yellow">GAP ALERT: Claude scores 10.2x more than Higgsfield</div><div class="alert-pill alert-green">Top Claude topics this week: claude, code, anthropic</div><div class="alert-pill alert-green">Higgsfield top post this week: score 6968</div></div>
+
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <span class="metric-value">636</span>
+            <div class="metric-label">Posts Scraped</div>
+        </div>
+        <div class="metric-card">
+            <span class="metric-value">570.4</span>
+            <div class="metric-label">Avg Score</div>
+        </div>
+        <div class="metric-card">
+            <span class="metric-value">18,338</span>
+            <div class="metric-label">Top Post Score</div>
+        </div>
+        <div class="metric-card">
+            <span class="metric-value">691x</span>
+            <div class="metric-label">Tip vs Question</div>
+        </div>
+    </div>
+
+    <div class="two-col">
+        <div class="section">
+            <h2><span class="dot"></span>Content Type Performance</h2>
+            <div class="bar-item"><div class="bar-label"><span>Code</span><span>833.0</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div><div class="bar-item"><div class="bar-label"><span>Tips</span><span>460.3</span></div><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div></div><div class="bar-item"><div class="bar-label"><span>Comparison</span><span>278.1</span></div><div class="bar-track"><div class="bar-fill" style="width:33%"></div></div></div><div class="bar-item"><div class="bar-label"><span>Questions</span><span>152.1</span></div><div class="bar-track"><div class="bar-fill" style="width:18%"></div></div></div>
+        </div>
+        <div class="section">
+            <h2><span class="dot"></span>Subreddit Performance</h2>
+            <div class="bar-item"><div class="bar-label"><span>r/NonPoliticalTwitter</span><span>10873.0</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/ProgrammerHumor</span><span>5102.6</span></div><div class="bar-track"><div class="bar-fill" style="width:47%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/projectzomboid</span><span>4741.0</span></div><div class="bar-track"><div class="bar-fill" style="width:44%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/BestofRedditorUpdates</span><span>4617.0</span></div><div class="bar-track"><div class="bar-fill" style="width:42%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/anxietymemes</span><span>3347.0</span></div><div class="bar-track"><div class="bar-fill" style="width:31%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/AO3</span><span>3099.5</span></div><div class="bar-track"><div class="bar-fill" style="width:29%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/vibecoding</span><span>2933.3</span></div><div class="bar-track"><div class="bar-fill" style="width:27%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/technology</span><span>2824.4</span></div><div class="bar-track"><div class="bar-fill" style="width:26%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/jobsearchhacks</span><span>2514.0</span></div><div class="bar-track"><div class="bar-fill" style="width:23%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/cscareerquestions</span><span>2504.0</span></div><div class="bar-track"><div class="bar-fill" style="width:23%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/UnderReportedNews</span><span>2425.0</span></div><div class="bar-track"><div class="bar-fill" style="width:22%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/LinkedInLunatics</span><span>2232.0</span></div><div class="bar-track"><div class="bar-fill" style="width:21%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/FlockSurveillance</span><span>2141.0</span></div><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/accelerate</span><span>2108.5</span></div><div class="bar-track"><div class="bar-fill" style="width:19%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/tech_x</span><span>2096.0</span></div><div class="bar-track"><div class="bar-fill" style="width:19%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/Anthropic</span><span>2064.0</span></div><div class="bar-track"><div class="bar-fill" style="width:19%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/hatethissmug</span><span>2043.0</span></div><div class="bar-track"><div class="bar-fill" style="width:19%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/france</span><span>1882.0</span></div><div class="bar-track"><div class="bar-fill" style="width:17%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/github</span><span>1749.0</span></div><div class="bar-track"><div class="bar-fill" style="width:16%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/ArtificialInteligence</span><span>1683.7</span></div><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/Entrepreneur</span><span>1672.0</span></div><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/webdev</span><span>1667.0</span></div><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/InterstellarKinetics</span><span>1603.0</span></div><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/claude</span><span>1559.5</span></div><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/selfhosted</span><span>1553.0</span></div><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/sysadmin</span><span>1544.0</span></div><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/ObscurePatentDangers</span><span>1475.0</span></div><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/walkaway</span><span>1460.0</span></div><div class="bar-track"><div class="bar-fill" style="width:13%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/worldbuilding</span><span>1438.0</span></div><div class="bar-track"><div class="bar-fill" style="width:13%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/ExperiencedDevs</span><span>1368.0</span></div><div class="bar-track"><div class="bar-fill" style="width:13%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/aiagents</span><span>1336.0</span></div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/Snorkblot</span><span>1310.0</span></div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/ClaudeCode</span><span>1281.1</span></div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/mildlyinfuriating</span><span>1173.0</span></div><div class="bar-track"><div class="bar-fill" style="width:11%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/Accounting</span><span>1139.0</span></div><div class="bar-track"><div class="bar-fill" style="width:10%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/technews</span><span>1100.0</span></div><div class="bar-track"><div class="bar-fill" style="width:10%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/pwnhub</span><span>1063.0</span></div><div class="bar-track"><div class="bar-fill" style="width:10%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/singularity</span><span>1053.1</span></div><div class="bar-track"><div class="bar-fill" style="width:10%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/AppBusiness</span><span>1043.0</span></div><div class="bar-track"><div class="bar-fill" style="width:10%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/law</span><span>1028.0</span></div><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/privacy</span><span>1020.0</span></div><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/brdev</span><span>1017.0</span></div><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/firefox</span><span>1015.0</span></div><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/Agent_AI</span><span>932.0</span></div><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/recruitinghell</span><span>927.0</span></div><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/AI_India</span><span>919.7</span></div><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/graphic_design</span><span>907.0</span></div><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/197</span><span>900.0</span></div><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/ClaudeCowork</span><span>867.0</span></div><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/MarketPulseReport</span><span>848.0</span></div><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/linux</span><span>827.0</span></div><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/AskVibecoders</span><span>781.0</span></div><div class="bar-track"><div class="bar-fill" style="width:7%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/OpenAI</span><span>755.0</span></div><div class="bar-track"><div class="bar-fill" style="width:7%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/OutOfTheLoop</span><span>751.0</span></div><div class="bar-track"><div class="bar-fill" style="width:7%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/PoisonFountain</span><span>709.0</span></div><div class="bar-track"><div class="bar-fill" style="width:7%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/PromptEngineering</span><span>700.5</span></div><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/homeassistant</span><span>685.0</span></div><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/programiranje</span><span>679.0</span></div><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/Disney_Infinity</span><span>661.0</span></div><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/anime_titties</span><span>594.0</span></div><div class="bar-track"><div class="bar-fill" style="width:5%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/StartupMind</span><span>587.0</span></div><div class="bar-track"><div class="bar-fill" style="width:5%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/whennews</span><span>587.0</span></div><div class="bar-track"><div class="bar-fill" style="width:5%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/ClaudeAI</span><span>572.1</span></div><div class="bar-track"><div class="bar-fill" style="width:5%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/ChatGPT</span><span>252.7</span></div><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/LocalLLaMA</span><span>101.8</span></div><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div></div><div class="bar-item"><div class="bar-label"><span>r/artificial</span><span>30.0</span></div><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div></div>
+        </div>
+    </div>
+
+    <div class="two-col">
+        <div class="section">
+            <h2><span class="dot"></span>Top 10 Claude Posts This Week</h2>
+            <div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/ProgrammerHumor/comments/1rzw54v/agentsbeforeaiagentwasathing/"><div class="post-title">agentsBeforeAIAgentWasAThing...</div><div class="post-score">18338</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/technology/comments/1s9jljp/anthropic_issues_copyright_takedown_requests_to/"><div class="post-title">Anthropic issues copyright takedown requests to remove 8,000+ copies of Cla...</div><div class="post-score">11427</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/NonPoliticalTwitter/comments/1rmucxg/ai_real_af/"><div class="post-title">ai real af...</div><div class="post-score">10873</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/ClaudeAI/comments/1sble09/taught_claude_to_talk_like_a_caveman_to_use_75/"><div class="post-title">Taught Claude to talk like a caveman to use 75% less tokens....</div><div class="post-score">9243</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/ClaudeAI/comments/1rt31th/why_the_majority_of_vibe_coded_projects_fail/"><div class="post-title">Why the majority of vibe coded projects fail...</div><div class="post-score">8167</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/ProgrammerHumor/comments/1s3bzeq/anotherdayofsolvedcoding/"><div class="post-title">anotherDayOfSolvedCoding...</div><div class="post-score">6842</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/vibecoding/comments/1s9kvjj/anthropic_just_trolled_you_all_happy_1st_of_april/"><div class="post-title">Anthropic just trolled you all. Happy 1st of April....</div><div class="post-score">6388</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/ClaudeAI/comments/1s41fny/25_years_multiple_specialists_zero_answers_one/"><div class="post-title">25 years. Multiple specialists. Zero answers. One Claude conversation crack...</div><div class="post-score">5610</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/ClaudeAI/comments/1s8lkkm/i_dug_through_claude_codes_leaked_source_and/"><div class="post-title">i dug through claude codes leaked source and anthropics codebase is absol...</div><div class="post-score">5419</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/AO3/comments/1s9bu84/excuse_me_wtf_is_happening/"><div class="post-title">Excuse me? WTF is HAPPENING😭😭...</div><div class="post-score">4765</div></div>
+        </div>
+        <div class="section">
+            <h2><span class="dot"></span>Top Keywords</h2>
+            <div class="keyword-cloud"><span class="keyword-tag big">claude (174)</span><span class="keyword-tag big">code (110)</span><span class="keyword-tag big">anthropic (56)</span><span class="keyword-tag big">chatgpt (55)</span><span class="keyword-tag big">gemma (35)</span><span class="keyword-tag ">built (30)</span><span class="keyword-tag ">model (27)</span><span class="keyword-tag ">source (26)</span><span class="keyword-tag ">now (24)</span><span class="keyword-tag ">agents (21)</span><span class="keyword-tag ">one (19)</span><span class="keyword-tag ">models (19)</span><span class="keyword-tag ">here (18)</span><span class="keyword-tag ">after (18)</span><span class="keyword-tag ">most (17)</span></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="dot"></span>Title Length Sweet Spot</h2>
+        <div class="bar-item"><div class="bar-label"><span>Very short (under 30)</span><span>904.5</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div><div class="bar-item"><div class="bar-label"><span>Short (30-60 chars)</span><span>598.3</span></div><div class="bar-track"><div class="bar-fill" style="width:66%"></div></div></div><div class="bar-item"><div class="bar-label"><span>Medium (60-90 chars)</span><span>364.8</span></div><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div></div><div class="bar-item"><div class="bar-label"><span>Long (90-120 chars)</span><span>453.3</span></div><div class="bar-track"><div class="bar-fill" style="width:50%"></div></div></div><div class="bar-item"><div class="bar-label"><span>Very long (120+)</span><span>806.8</span></div><div class="bar-track"><div class="bar-fill" style="width:89%"></div></div></div>
+    </div>
+
+    <div class="section">
+        <h2><span class="dot"></span>ML Model — What Predicts Virality</h2>
+        <p style="color:#555;font-size:0.75rem;margin-bottom:1rem">Random Forest trained on 636 posts. Score out of 1.0</p>
+        <div class="bar-item"><div class="bar-label"><span>Title length</span><span>0.771</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div>
+        <div class="bar-item"><div class="bar-label"><span>Has number in title</span><span>0.070</span></div><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div></div>
+        <div class="bar-item"><div class="bar-label"><span>Has question mark</span><span>0.066</span></div><div class="bar-track"><div class="bar-fill" style="width:8.5%"></div></div></div>
+        <div class="bar-item"><div class="bar-label"><span>Has code keywords</span><span>0.062</span></div><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div></div>
+        <div class="bar-item"><div class="bar-label"><span>Hour of posting</span><span>0.000</span></div><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div></div>
+    </div>
+
+    <div class="section">
+        <h2><span class="dot"></span>Claude vs Higgsfield — Live Comparison</h2>
+        <p style="color:#555;font-size:0.75rem;margin-bottom:1rem">Both datasets scraped live every Sunday night automatically</p>
+        <table>
+            <thead><tr><th>Metric</th><th>Claude</th><th>Higgsfield</th><th>Gap</th></tr></thead>
+            <tbody>
+                <tr><td>Posts scraped</td><td class="win">636</td><td class="lose">645</td><td>1.0x more discourse</td></tr>
+                <tr><td>Avg score per post</td><td class="win">570.4</td><td class="lose">56.1</td><td>10.2x more engagement</td></tr>
+                <tr><td>Top post score</td><td class="win">18,338</td><td class="lose">6,968</td><td>2.6x higher</td></tr>
+                <tr><td>Own subreddit avg</td><td class="win">131</td><td class="lose">nan</td><td>--</td></tr>
+                <tr><td>Best content format</td><td class="win">Tip/code posts</td><td class="lose">Comparison posts (86.3)</td><td>Claude code scores 9.7x more</td></tr>
+            </tbody>
+        </table>
+        <div style="margin-top:1.5rem">
+            <h3 style="font-size:0.9rem;font-weight:600;margin-bottom:0.75rem;color:#ccc">Top Higgsfield posts this week</h3>
+            <div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/aivideo/comments/1sb3re9/harry_potter_drip_ep13_timeline_official/"><div class="post-title">Harry Potter Drip EP1-3 Timeline (Official) - Unhindered Studios...</div><div class="post-score">6968</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/aivideo/comments/1sbz356/for_the_cure/"><div class="post-title">For the Cure!...</div><div class="post-score">3092</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/aivideo/comments/1sbfdpa/blacknape_always_official_rap_music_video/"><div class="post-title">BLACK$NAPE - Always (Official Rap Music Video)...</div><div class="post-score">2613</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/aivideo/comments/1s9xqrv/genz_harry_potter/"><div class="post-title">GenZ Harry Potter...</div><div class="post-score">2176</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/aivideo/comments/1sabnea/cat_vs_ultraman/"><div class="post-title">Cat vs Ultraman!...</div><div class="post-score">1482</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/aivideo/comments/1sb42d7/she_was_quite/"><div class="post-title">She was quite...</div><div class="post-score">866</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/StableDiffusion/comments/1sbbd1y/netflix_released_a_model/"><div class="post-title">Netflix released a model...</div><div class="post-score">848</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/artificial/comments/1s828dj/world_models_will_be_the_next_big_thing_byebye/"><div class="post-title">World models will be the next big thing, bye-bye LLMs...</div><div class="post-score">822</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/IndianArtAI/comments/1s1hy9z/how_i_created_an_ai_influencer_using_only_geminis/"><div class="post-title">How I created an AI influencer using only Geminis Nano Banana (complete wo...</div><div class="post-score">805</div></div><div class="post-item" onclick="window.open(this.dataset.url,'_blank')" data-url="https://reddit.com/r/artificial/comments/1sc3kpj/openai_ceo_sam_altman_accused_of_sexual_abuse_by/"><div class="post-title">OpenAI CEO Sam Altman accused of sexual abuse by family member...</div><div class="post-score">599</div></div>
+        </div>
+        <div style="margin-top:1.5rem">
+            <h3 style="font-size:0.9rem;font-weight:600;margin-bottom:0.75rem;color:#ccc">Top Higgsfield keywords this week</h3>
+            <div class="keyword-cloud"><span class="keyword-tag big">video (66)</span><span class="keyword-tag big">higgsfield (54)</span><span class="keyword-tag big">image (40)</span><span class="keyword-tag big">model (26)</span><span class="keyword-tag big">generation (25)</span><span class="keyword-tag ">made (25)</span><span class="keyword-tag ">best (22)</span><span class="keyword-tag ">seedance (21)</span><span class="keyword-tag ">models (20)</span><span class="keyword-tag ">one (19)</span><span class="keyword-tag ">music (18)</span><span class="keyword-tag ">workflow (18)</span><span class="keyword-tag ">claude (18)</span><span class="keyword-tag ">chatgpt (18)</span><span class="keyword-tag ">built (18)</span></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><span class="dot"></span>Counter-Playbook — 4 Week Plan for Higgsfield</h2>
+        <table>
+            <thead><tr><th>Week</th><th>Action</th><th>Target</th><th>Why</th></tr></thead>
+            <tbody>
+                <tr><td style="color:#ff4500;font-weight:600">Week 1</td><td>Move to r/AfterEffects + r/MotionDesign</td><td>Avg score above 50</td><td>r/HiggsefieldAI avg only 13</td></tr>
+                <tr><td style="color:#ff4500;font-weight:600">Week 2</td><td>Short titles 30-60 chars with numbers</td><td>One post above 100</td><td>Short titles score 193 vs 52 for long</td></tr>
+                <tr><td style="color:#ff4500;font-weight:600">Week 3</td><td>Post API tutorials on r/LocalLLaMA</td><td>Upvote ratio above 0.90</td><td>Code content scores 3.5x more</td></tr>
+                <tr><td style="color:#ff4500;font-weight:600">Week 4</td><td>Double down on best format</td><td>Weekly avg above 100</td><td>Compound what works</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2><span class="dot"></span>Data Visualizations — Engagement Analysis</h2>
+        <p style="color:#555;font-size:0.75rem;margin-bottom:1rem">Content type performance, subreddit scores, top posts, distribution</p>
+        <img src="charts.png" alt="Charts" style="width:100%;border-radius:8px;border:1px solid #333;margin-bottom:1rem;">
+        <img src="sentiment_chart.jpg" alt="Sentiment Analysis" style="width:100%;border-radius:8px;border:1px solid #333;margin-bottom:1rem;">
+        <img src="chart_extra.jpg" alt="Extra Chart" style="width:100%;border-radius:8px;border:1px solid #333;margin-bottom:1rem;">
+        <img src="chart_extra2.jpg" alt="Extra Chart 2" style="width:100%;border-radius:8px;border:1px solid #333;">
+    </div>
+
+    <div class="section">
+        <h2><span class="dot"></span>Pipeline Architecture</h2>
+        <img src="architecture.png" alt="Architecture" style="width:100%;border-radius:8px;border:1px solid #333;">
+    </div>
+
+</div>
+
+<div class="footer">
+    HackNU 2026 — Growth Engineering Challenge
+    <br>Data refreshes every Sunday 11pm automatically via cron job
+</div>
+
+<script>
+async function triggerRefresh() {
+    const btn = document.getElementById('refresh-btn');
+    const overlay = document.getElementById('refresh-overlay');
+    btn.disabled = true;
+    btn.textContent = 'Scraping...';
+    overlay.style.display = 'flex';
+    try {
+        await fetch('http://localhost:8888/refresh');
+        setTimeout(() => { location.reload(); }, 35000);
+    } catch(e) {
+        overlay.style.display = 'none';
+        btn.disabled = false;
+        btn.textContent = 'Refresh Data';
+        location.reload();
+    }
+}
+</script>
+
+</body>
+</html>
